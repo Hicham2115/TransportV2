@@ -163,81 +163,79 @@ function FirstSection() {
         </div>
       </div>
 
-      <div className="mt-20 mb-20 flex w-full justify-center">
+      <div className="mt-20 mb-20 grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Card 1 */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="border-x-1 border-t-1 border-white/80 p-4"
+          className="rounded-xl border border-white/30 p-4 sm:p-6"
         >
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
-            <ShieldCheck
-              className="relative z-10 h-5 w-5 text-white/95"
-              strokeWidth={1.8}
-            />
+            <ShieldCheck className="relative z-10 h-5 w-5 text-white/95" />
           </div>
-          <br />
-          <div className="flex flex-col gap-4">
-            <span className="text-lg font-bold">
+
+          <div className="mt-4 flex flex-col gap-3">
+            <span className="text-base font-bold sm:text-lg">
               Trusted by Thousands of Drivers
             </span>
 
-            <span className="">
+            <span className="text-sm text-white/80 sm:text-base">
               We provide reliable car rental and transport services trusted by
               individuals and businesses every day.
             </span>
           </div>
         </motion.div>
 
+        {/* Card 2 */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="border-x-1 border-t-1 border-white/80 p-4"
+          className="rounded-xl border border-white/30 p-4 sm:p-6"
         >
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
-
-            <CalendarCheck2
-              className="relative z-10 h-5 w-5 text-white/95"
-              strokeWidth={1.8}
-            />
+            <CalendarCheck2 className="relative z-10 h-5 w-5 text-white/95" />
           </div>
-          <br />
-          <div className="flex flex-col gap-4">
-            <span className="text-lg font-bold">
+
+          <div className="mt-4 flex flex-col gap-3">
+            <span className="text-base font-bold sm:text-lg">
               Smooth Booking & Hassle-Free Pickup
             </span>
 
-            <span className="">
+            <span className="text-sm text-white/80 sm:text-base">
               Enjoy fast reservations, easy documentation, and seamless vehicle
               pickup wherever you need it.
             </span>
           </div>
         </motion.div>
 
+        {/* Card 3 */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="border-x-1 border-t-1 border-white/80 p-4"
+          className="rounded-xl border border-white/30 p-4 sm:p-6"
         >
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
-            <MapPinCheckInside />
+            <MapPinCheckInside className="relative z-10 h-5 w-5 text-white/95" />
           </div>
-          <br />
-          <div className="flex flex-col gap-4">
-            <span className="text-lg font-bold">Smart Mobility Platform</span>
 
-            <span className="">
+          <div className="mt-4 flex flex-col gap-3">
+            <span className="text-base font-bold sm:text-lg">
+              Smart Mobility Platform
+            </span>
+
+            <span className="text-sm text-white/80 sm:text-base">
               Track, manage, and book your rides in real time with our simple
               and efficient digital system.
             </span>
