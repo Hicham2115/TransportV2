@@ -58,7 +58,7 @@ function SecondSection() {
   const [activeItem, setActiveItem] = useState(services[0])
 
   return (
-    <div className="relative min-h-screen overflow-hidden text-white">
+    <div className="relative mx-auto min-h-screen w-[95%] overflow-hidden text-white sm:w-[90%] sm:rounded-3xl md:w-full md:rounded-none">
       {/* Blurred Background Image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-700 ease-in-out"
@@ -70,23 +70,23 @@ function SecondSection() {
       </div>
 
       <div className="relative z-10 pb-20">
-        <div className="mx-20 mr-20 flex justify-between pt-20">
+        <div className="flex flex-col gap-6 px-6 pt-20 md:flex-row md:items-center md:justify-between md:px-20">
           <h1 className="font-serif text-[30px] leading-tight font-light text-blue-400 drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)]">
             LOGO NAME
           </h1>
           <div className="flex items-center gap-4">
-            <div className="h-14 w-[2px] rounded-full bg-blue-400" />
-            <h2 className="text-3xl font-bold tracking-wide text-blue-400">
+            <div className="h-10 w-[2px] rounded-full bg-blue-400 md:h-14" />
+            <h2 className="text-2xl font-bold tracking-wide text-blue-400 md:text-3xl">
               Our Services
             </h2>
           </div>
         </div>
 
         {/* Main interactive section */}
-        <div className="mx-20 mt-20 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 items-start gap-12 px-6 md:mt-20 md:grid-cols-2 md:gap-12 md:px-20">
           {/* Left Side: Image and paragraph */}
-          <div className="flex flex-col gap-6">
-            <div className="relative h-64 w-full max-w-md overflow-hidden bg-white/5 shadow-2xl [clip-path:polygon(10%_0%,100%_0%,100%_80%,90%_100%,0%_100%,0%_20%)]">
+          <div className="flex flex-col gap-6 md:sticky md:top-32">
+            <div className="relative h-56 w-[90%] max-w-md overflow-hidden bg-white/5 shadow-2xl [clip-path:polygon(10%_0%,100%_0%,100%_80%,90%_100%,0%_100%,0%_20%)] sm:w-80 md:h-64 md:w-full">
               {" "}
               <AnimatePresence mode="popLayout">
                 <motion.img
@@ -102,7 +102,7 @@ function SecondSection() {
               </AnimatePresence>
             </div>
 
-            <div className="h-[120px] max-w-md overflow-hidden">
+            <div className="h-auto w-[90%] max-w-md overflow-hidden sm:w-80 md:h-[120px] md:w-full">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeItem?.id}
@@ -124,13 +124,14 @@ function SecondSection() {
           </div>
 
           {/* Right Side: Navigation List */}
-          <div className="flex flex-col gap-0 border-l border-white/10 pl-8">
+          <div className="flex flex-col gap-0 border-l border-white/10 pl-4 md:pl-8">
             {services.map((service) => {
               const isActive = activeItem.id === service.id
               return (
                 <div
                   key={service.id}
                   onMouseEnter={() => setActiveItem(service)}
+                  onClick={() => setActiveItem(service)}
                   className="group relative cursor-pointer border-b border-white/10 py-6 last:border-0"
                 >
                   <motion.div
@@ -141,10 +142,10 @@ function SecondSection() {
                     transition={{ duration: 0.3, ease: "easeOut" }}
                     className="flex items-start gap-2 group-hover:text-white/60"
                   >
-                    <h2 className="text-5xl font-bold tracking-tight md:text-6xl">
+                    <h2 className="text-3xl font-bold tracking-tight md:text-5xl lg:text-6xl">
                       {service.title}
                     </h2>
-                    <span className="mt-2 text-sm font-semibold">
+                    <span className="mt-1 text-xs font-semibold md:mt-2 md:text-sm">
                       [{service.id}]
                     </span>
                   </motion.div>
