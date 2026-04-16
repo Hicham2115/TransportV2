@@ -39,6 +39,29 @@ function FAQ() {
           We’re here to help
         </motion.h1>
 
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="mt-10"
+        >
+          Can't find what you're looking for?
+          <br />
+          Contact us here:
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="group italique relative mt-5 inline-block cursor-pointer text-white"
+        >
+          hello@bogixglobal.com
+
+          <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full" />
+        </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
