@@ -76,7 +76,7 @@ function FirstSection() {
       <div className="mt-10 flex w-full flex-col justify-center gap-2 md:flex-row">
         {/* Image 1 */}
         {/* Image 1 */}
-        <div className="group relative w-100 overflow-hidden rounded-2xl shadow-md">
+        <div className="group relative w-80 overflow-hidden rounded-2xl shadow-md md:w-100">
           <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
             <Image
               src={img1}
@@ -105,7 +105,7 @@ function FirstSection() {
         </div>
 
         {/* Image 2 */}
-        <div className="group relative w-100 overflow-hidden rounded-2xl shadow-md">
+        <div className="group relative w-80 overflow-hidden rounded-2xl shadow-md md:w-100">
           <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
             <Image
               src={img2}
@@ -134,7 +134,7 @@ function FirstSection() {
         </div>
 
         {/* Image 3 */}
-        <div className="group relative w-100 overflow-hidden rounded-2xl">
+        <div className="group relative w-80 overflow-hidden rounded-2xl md:w-100">
           <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
             <Image
               src={img3}
