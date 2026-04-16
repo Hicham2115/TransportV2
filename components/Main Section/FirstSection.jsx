@@ -6,39 +6,69 @@ import img3 from "@/app/assets/pexels-pavel-danilyuk-8425057.jpg"
 import img4 from "@/app/assets/pexels-mizunokozuki-13802141.jpg"
 
 import Image from "next/image"
+import { motion } from "framer-motion"
 import {
   CalendarCheck2,
   CarFront,
   MapPinCheckInside,
   ShieldCheck,
 } from "lucide-react"
+import { DotLottieReact } from "@lottiefiles/dotlottie-react"
 
 function FirstSection() {
   return (
     <div className="relative mb-20 flex flex-col items-center px-6 font-serif md:px-20">
       <div className="flex w-full flex-col gap-10 md:flex-row md:items-start md:justify-between">
         {/* LEFT SIDE */}
-        <div className="flex items-center gap-4">
-          <div className="h-14 w-[2px] rounded-full bg-white" />
-          <h2 className="text-3xl font-bold tracking-wide text-white">
-            About Us
-          </h2>
-        </div>
-
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="flex items-center gap-4"
+        >
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-4">
+              <div className="h-14 w-[2px] rounded-full bg-white" />
+              <h2 className="text-3xl font-bold tracking-wide text-white">
+                About Us
+              </h2>
+            </div>
+            <div className="aspect-square w-40 md:ml-20 md:w-60 lg:w-72">
+              <DotLottieReact
+                src="https://lottie.host/e0d3531c-4542-4bd8-b091-a7c96c0559bc/vzBBiRTBKX.lottie"
+                loop
+                autoplay
+              />
+            </div>
+          </div>
+        </motion.div>
         {/* RIGHT SIDE */}
         <div className="space-y-6 md:w-1/2">
-          <h3 className="text-2xl leading-snug font-semibold text-white md:text-3xl">
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="text-2xl leading-snug font-semibold text-white md:text-3xl"
+          >
             At Next Way Transport, we move Morocco with safe, comfortable, and
             reliable journeys that connect people and places across the country.
-          </h3>
+          </motion.h3>
 
-          <p className="text-lg leading-relaxed text-white/80 italic">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="text-lg leading-relaxed text-white italic"
+          >
             With strong experience in passenger transport, we provide
             comfortable and efficient bus travel solutions across cities and
             regions. Our mission is to simplify mobility through safety,
             punctuality, and quality service — helping people travel with
             confidence every day.
-          </p>
+          </motion.p>
         </div>
       </div>
 
@@ -68,7 +98,7 @@ function FirstSection() {
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>
-            <p className="mt-0.5 text-[12px] text-white/90">
+            <p className="mt-0.5 text-[12px] text-white">
               Luxury fleet, flexible booking
             </p>
           </div>
@@ -97,7 +127,7 @@ function FirstSection() {
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>
-            <p className="mt-0.5 text-[12px] text-white/90">
+            <p className="mt-0.5 text-[12px] text-white">
               Luxury fleet, flexible booking
             </p>
           </div>
@@ -126,7 +156,7 @@ function FirstSection() {
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>
-            <p className="mt-0.5 text-[12px] text-white/90">
+            <p className="mt-0.5 text-[12px] text-white">
               Luxury fleet, flexible booking
             </p>
           </div>
@@ -134,7 +164,13 @@ function FirstSection() {
       </div>
 
       <div className="mt-20 mb-20 flex w-full justify-center">
-        <div className="border-x-1 border-t-1 border-white/40 p-4">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="border-x-1 border-t-1 border-white/80 p-4"
+        >
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
@@ -145,15 +181,24 @@ function FirstSection() {
           </div>
           <br />
           <div className="flex flex-col gap-4">
-            <span className="font-bold">Trusted by Thousands of Drivers</span>
+            <span className="text-lg font-bold">
+              Trusted by Thousands of Drivers
+            </span>
 
             <span className="">
               We provide reliable car rental and transport services trusted by
               individuals and businesses every day.
             </span>
           </div>
-        </div>
-        <div className="border-x-1 border-t-1 border-white/40 p-4">
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="border-x-1 border-t-1 border-white/80 p-4"
+        >
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
@@ -165,7 +210,7 @@ function FirstSection() {
           </div>
           <br />
           <div className="flex flex-col gap-4">
-            <span className="font-bold">
+            <span className="text-lg font-bold">
               Smooth Booking & Hassle-Free Pickup
             </span>
 
@@ -174,8 +219,15 @@ function FirstSection() {
               pickup wherever you need it.
             </span>
           </div>
-        </div>
-        <div className="border-x-1 border-t-1 border-white/40 p-4">
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="border-x-1 border-t-1 border-white/80 p-4"
+        >
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
@@ -183,14 +235,14 @@ function FirstSection() {
           </div>
           <br />
           <div className="flex flex-col gap-4">
-            <span className="font-bold">Smart Mobility Platform</span>
+            <span className="text-lg font-bold">Smart Mobility Platform</span>
 
             <span className="">
               Track, manage, and book your rides in real time with our simple
               and efficient digital system.
             </span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
