@@ -34,7 +34,7 @@ function Hero() {
         <div className="flex flex-wrap justify-center gap-4">
           <button className="font-barlow group relative inline-flex cursor-pointer justify-center overflow-hidden rounded-lg border-solid px-8 py-4 text-center text-white uppercase outline-offset-4 transition-transform duration-300 ease-in-out focus:outline focus:outline-2 focus:outline-offset-4 focus:outline-white">
             <span className="relative z-20 font-semibold">
-              Demander un devis
+              Request a quote
             </span>
 
             <span className="absolute top-0 left-[-75%] z-10 h-full w-[50%] rotate-12 bg-white/20 blur-lg transition-all duration-1000 ease-in-out group-hover:left-[125%]"></span>

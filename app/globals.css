@@ -119,9 +119,31 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scrollbar-color: #3b82f6 #cbd5e1;
+    scrollbar-width: thin;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #cbd5e1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: var(--radius);
+    border: 2px solid #cbd5e1;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+  }
+
   body {
-    @apply bg-background text-black;
+    @apply bg-background text-foreground;
   }
   html {
     @apply font-sans;
