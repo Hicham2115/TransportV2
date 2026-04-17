@@ -37,7 +37,6 @@ function Contact() {
               "polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px)",
           }}
         >
-          {/* A shadow drop div won't work on clip-path directly, so it sits flush to the right container */}
           <motion.div
             initial={{ scale: 1.1 }}
             whileInView={{ scale: 1 }}
@@ -60,7 +59,7 @@ function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="flex-1 bg-white/10 p-6 shadow-sm backdrop-blur-xl md:p-14 lg:p-16"
+          className="flex-1 bg-[#18181a4b] p-6 shadow-sm backdrop-blur-xl md:p-14 lg:p-16"
           style={{
             clipPath:
               "polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px)",
@@ -172,17 +171,17 @@ function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="group relative inline-flex  items-center justify-center overflow-hidden bg-[#3D69FF] px-8 py-3.5 font-medium text-white shadow-[0_0_30px_rgba(61,105,255,0.3)] transition-all duration-300 ease-out hover:bg-[#2557ff] hover:shadow-[0_0_50px_rgba(61,105,255,0.5)] cursor-pointer"
+                className="group relative inline-flex cursor-pointer items-center justify-center overflow-hidden bg-[#3D69FF] px-8 py-3.5 font-medium text-white shadow-[0_0_30px_rgba(61,105,255,0.3)] transition-all duration-300 ease-out hover:bg-[#2557ff] hover:shadow-[0_0_50px_rgba(61,105,255,0.5)]"
               >
                 {/* Shine sweep effect */}
-                <span className="absolute inset-0 flex h-full w-full [transform:skew(-13deg)_translateX(-150%)] justify-center group-hover:[transform:skew(-13deg)_translateX(150%)] group-hover:duration-1000 cursor-pointer">
+                <span className="absolute inset-0 flex h-full w-full [transform:skew(-13deg)_translateX(-150%)] cursor-pointer justify-center group-hover:[transform:skew(-13deg)_translateX(150%)] group-hover:duration-1000">
                   <div className="relative h-full w-10 bg-white/20 blur-md" />
                 </span>
 
-                <span className="relative flex  items-center gap-2">
+                <span className="relative flex items-center gap-2">
                   Envoyer le message
                   <svg
-                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 cursor-pointer"
+                    className="h-4 w-4 cursor-pointer transition-transform duration-300 group-hover:translate-x-1"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

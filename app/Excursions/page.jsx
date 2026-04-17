@@ -285,7 +285,7 @@ export default function Excursions() {
                   <motion.div
                     key={item.title}
                     whileHover={{ y: -8 }}
-                    className="w-full items-start overflow-hidden rounded-2xl border border-white/10 bg-white/5 md:w-[48%] md:items-center lg:w-[30%]"
+                    className="w-full items-start overflow-hidden rounded-2xl border border-white/10 bg-[#18181a4b] md:w-[48%] md:items-center lg:w-[30%]"
                   >
                     <div className="aspect-video overflow-hidden">
                       <img
