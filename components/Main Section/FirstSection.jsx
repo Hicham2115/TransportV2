@@ -75,7 +75,6 @@ function FirstSection() {
       {/* IMAGE CONTAINER */}
       <div className="mt-10 flex w-full flex-col justify-center gap-2 md:flex-row">
         {/* Image 1 */}
-        {/* Image 1 */}
         <div className="group relative w-80 overflow-hidden rounded-2xl shadow-md md:w-100">
           <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
             <Image
@@ -175,7 +174,7 @@ function FirstSection() {
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
-            <ShieldCheck className="relative z-10 h-5 w-5 text-white/95" />
+            <ShieldCheck className="relative z-10 h-7 w-7 text-white/95" />
           </div>
 
           <div className="mt-4 flex flex-col gap-3">
@@ -201,7 +200,7 @@ function FirstSection() {
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
-            <CalendarCheck2 className="relative z-10 h-5 w-5 text-white/95" />
+            <CalendarCheck2 className="relative z-10 h-7 w-7 text-white/95" />
           </div>
 
           <div className="mt-4 flex flex-col gap-3">
@@ -227,7 +226,7 @@ function FirstSection() {
           <div className="relative flex h-12 w-12 items-center justify-center">
             <div className="absolute inset-0 rounded-full border border-white/30" />
             <div className="absolute inset-[6px] rounded-full border border-white/15" />
-            <MapPinCheckInside className="relative z-10 h-5 w-5 text-white/95" />
+            <MapPinCheckInside className="relative z-10 h-7 w-7 text-white/95" />
           </div>
 
           <div className="mt-4 flex flex-col gap-3">

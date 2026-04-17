@@ -4,6 +4,9 @@ import SecondSection from "@/components/Main Section/SecondSection"
 import ThirdSection from "@/components/Main Section/ThirdSection"
 import SmoothScroll from "@/components/Main Section/SmoothScroll"
 import FAQ from "@/components/Main Section/FAQ"
+import FourthSection from "@/components/Main Section/FourthSection"
+import Footer from "@/components/Main Section/Footer"
+import Contact from "@/components/Main Section/Contact"
 
 function Page() {
   return (
@@ -14,6 +17,10 @@ function Page() {
       <ThirdSection />
       <SmoothScroll />
       <FAQ />
+      <FourthSection />
+
+      <Contact />
+      <Footer />
     </div>
   )
 }
