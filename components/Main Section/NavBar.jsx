@@ -16,11 +16,11 @@ import Image from "next/image"
 // import Logo from "@/app/assets/nextway_logo_transparent_4k.png";
 
 const navigationLinks = [
-  { href: "/", label: "Accueil" },
-  { href: "/#Histoire", label: "Notre Histoire" },
+  { href: "/", label: "Home" },
+  { href: "/#Histoire", label: "Our Story" },
   { href: "/#Excursions", label: "Excursions" },
-  { href: "/#Flotte", label: "Notre Flotte" },
-  { href: "/#Contact", label: "Contact US" },
+  { href: "/#Flotte", label: "Our Fleet" },
+  { href: "/#Contact", label: "Contact Us" },
 ]
 
 export default function Component() {

@@ -60,14 +60,6 @@ function Hero() {
           cursorBlinkDuration={0.5}
           className="mx-auto mb-10 max-w-full font-serif text-[clamp(1rem,2.2vw,1.22rem)] leading-relaxed font-light text-white italic"
         />
-        {/* <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mx-auto mb-10 max-w-full font-serif text-[clamp(1rem,2.2vw,1.22rem)] leading-relaxed font-light text-white italic"
-        >
-          
-        </motion.p> */}
 
         {/* Buttons */}
         <motion.div

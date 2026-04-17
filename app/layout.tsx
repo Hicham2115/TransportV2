@@ -15,10 +15,11 @@ import {
   Users,
 } from "lucide-react"
 
-import Dock from "../components/Dock"
+import { AppDock } from "@/components/AppDock"
 import { useRouter } from "next/navigation"
 import Grainient from "@/components/Grainient"
 import Footer from "@/components/Main Section/Footer"
+import { SmoothCursor } from "@/components/ui/smooth-cursor"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -32,45 +33,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const router = useRouter()
-
-  const items = [
-    {
-      icon: <House size={18} />,
-      label: "Home",
-      onClick: () => {
-        router.push("/")
-      },
-    },
-    {
-      icon: <BookOpen size={18} />,
-      label: "Notre Histoire",
-      onClick: () => {
-        router.push("/History")
-      },
-    },
-    {
-      icon: <BusFront size={18} />,
-      label: "Excursions",
-      onClick: () => {
-        router.push("/Excursions")
-      },
-    },
-    {
-      icon: <Users size={18} />,
-      label: "Notre Flotte",
-      onClick: () => {
-        router.push("/Fleet")
-      },
-    },
-    {
-      icon: <PhoneCall size={18} />,
-      label: "Contact",
-      onClick: () => {
-        router.push("/Contact")
-      },
-    },
-  ]
   return (
     <html
       lang="en"
@@ -116,15 +78,9 @@ export default function RootLayout({
           <Footer />
         </main>
 
-        {/* Dock (fixed at bottom) */}
-        <div className="fixed bottom-4 left-1/2 z-20 -translate-x-1/2">
-          <Dock
-            items={items}
-            panelHeight={70}
-            baseItemSize={50}
-            magnification={80}
-          />
-        </div>
+        <AppDock />
+
+        <SmoothCursor />
       </body>
     </html>
   )
