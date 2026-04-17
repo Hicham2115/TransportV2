@@ -288,8 +288,8 @@ export default function Excursions() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              whileHover={{ scale: 1.03, y: -6 }}
+              transition={{ duration: 0, delay: 0.1 }}
+              // whileHover={{ scale: 1.03, y: -6 }}
             >
               <div className="mb-2 flex items-center gap-3">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
@@ -310,8 +310,8 @@ export default function Excursions() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ scale: 1.03, y: -6 }}
+              transition={{ duration: 0, delay: 0.2 }}
+              // whileHover={{ scale: 1.03, y: -6 }}
             >
               <div className="mb-2 flex items-center gap-3">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
@@ -332,8 +332,8 @@ export default function Excursions() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              whileHover={{ scale: 1.03, y: -6 }}
+              transition={{ duration: 0, delay: 0.3 }}
+              // whileHover={{ scale: 1.03, y: -6 }}
             >
               <div className="mb-2 flex items-center gap-3">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
@@ -354,8 +354,8 @@ export default function Excursions() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              whileHover={{ scale: 1.03, y: -6 }}
+              transition={{ duration: 0, delay: 0.4 }}
+              // whileHover={{ scale: 1.03, y: -6 }}
             >
               <div className="mb-2 flex items-center gap-3">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
@@ -376,8 +376,8 @@ export default function Excursions() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              whileHover={{ scale: 1.03, y: -6 }}
+              transition={{ duration: 0, delay: 0.5 }}
+              // whileHover={{ scale: 1.03, y: -6 }}
             >
               <div className="mb-2 flex items-center gap-3">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
@@ -398,8 +398,8 @@ export default function Excursions() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              whileHover={{ scale: 1.03, y: -6 }}
+              transition={{ duration: 0, delay: 0.6 }}
+              // whileHover={{ scale: 1.03, y: -6 }}
             >
               <div className="mb-2 flex items-center gap-3">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-blue-700">
