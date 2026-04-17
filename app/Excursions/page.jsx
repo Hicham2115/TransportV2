@@ -317,7 +317,9 @@ export default function Excursions() {
 
           <div className="mx-auto mt-6 max-w-3xl text-white/70">
             <TextType
-              text={["Aventures inoubliables."]}
+              text={[
+                "Unforgettable adventures that immerse you in breathtaking landscapes, rich culture, and once-in-a-lifetime experiences.",
+              ]}
               typingSpeed={60}
               pauseDuration={1500}
               className="mx-auto mb-10 max-w-full font-serif text-[clamp(1rem,2.2vw,1.22rem)] leading-relaxed font-light text-white italic"
@@ -350,15 +352,15 @@ export default function Excursions() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-4 text-sm text-white/90 sm:text-base md:max-w-lg"
             >
-              Notre circuit vous fait découvrir les métropoles emblématiques du
-              Maroc, chacune avec son ambiance et son patrimoine unique. À
-              Marrakech, explorez la médina animée, les souks colorés, et le
-              jardin Majorelle. À Fès, perdez-vous dans les ruelles de la plus
-              ancienne médina du monde et visitez l'université Al Quaraouiyine.
-              Casablanca vous impressionnera par la mosquée Hassan II et son
-              architecture moderne, tandis que Rabat vous charmera avec la tour
-              Hassan et le mausolée Mohammed V. Tanger, enfin, vous séduira par
-              sa médina surplombant la mer et son mélange unique de cultures.
+              Our tour takes you to Morocco's iconic cities, each with its own
+              unique atmosphere and heritage. In Marrakech, explore the vibrant
+              medina, the colorful souks, and the Majorelle Garden. In Fez, lose
+              yourself in the alleyways of the world's oldest medina and visit
+              Al Quaraouiyine University. Casablanca will impress you with the
+              Hassan II Mosque and its modern architecture, while Rabat will
+              charm you with the Hassan Tower and the Mohammed V Mausoleum.
+              Finally, Tangier will captivate you with its medina overlooking
+              the sea and its unique blend of cultures.
             </motion.p>
           </div>
 
@@ -406,14 +408,13 @@ export default function Excursions() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-4 text-sm text-white/90 sm:text-base md:max-w-lg"
             >
-              Nos circuits dans le Sahara vous plongent au cœur du désert
-              marocain. À Merzouga, découvrez les majestueuses dunes de l'Erg
-              Chebbi, faites une balade à dos de chameau, admirez un coucher de
-              soleil spectaculaire, et passez une nuit inoubliable sous les
-              étoiles dans un campement berbère. À M'Hamid El Ghizlane, aux
-              portes du désert, vivez une aventure authentique loin des sentiers
-              battus, idéale pour ceux en quête de solitude et de paysages
-              grandioses.
+              Our Sahara tours immerse you in the heart of the Moroccan desert.
+              In Merzouga, discover the majestic dunes of Erg Chebbi, take a
+              camel ride, admire a spectacular sunset, and spend an
+              unforgettable night under the stars in a Berber camp. In M'Hamid
+              El Ghizlane, at the gateway to the desert, experience an authentic
+              adventure far from the beaten track, ideal for those seeking
+              solitude and breathtaking landscapes.
             </motion.p>
           </div>
 

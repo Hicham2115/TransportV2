@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="relative  overflow-hidden bg-[#18181a] px-6 pt-14 md:px-14">
+    <footer className="relative overflow-hidden bg-[#18181a] px-6 pt-14 md:px-14">
       {/* Decorative slanted lines — matches your hero panel aesthetic */}
       <svg
         className="pointer-events-none absolute top-0 right-0 z-0 h-full w-[80%] md:w-[55%]"
@@ -66,9 +66,9 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full min-w-0 flex-1  rounded-l-[6px] border border-white/10 bg-white/5 px-3.5 py-2.5 text-sm text-white outline-none placeholder:text-zinc-500 focus:border-[#3D69FF]"
+                  className="w-full min-w-0 flex-1 rounded-l-[6px] border border-white/10 bg-white/5 px-3.5 py-2.5 text-sm text-white outline-none placeholder:text-zinc-500 focus:border-[#3D69FF]"
                 />
-                <button className="shrink-0  rounded-r-[6px] bg-[#2557ff] px-4 text-sm font-medium text-white transition-colors hover:bg-[#2b4bcc] cursor-pointer">
+                <button className="shrink-0 cursor-pointer rounded-r-[6px] bg-[#2557ff] px-4 text-sm font-medium text-white transition-colors hover:bg-[#2b4bcc]">
                   Subscribe
                 </button>
               </div>
@@ -82,12 +82,12 @@ export default function Footer() {
                 Navigation
               </p>
               <nav className="flex flex-col gap-2.5">
-                {["Home", "About us", "Services", "Routes", "FAQs"].map(
+                {["Home", "Excursions", "Our Story", "Our Fleet"].map(
                   (item) => (
                     <Link
                       key={item}
                       href="#"
-                      className=" text-sm text-zinc-400 transition-colors hover:text-[#3D69FF]"
+                      className="text-sm text-zinc-400 transition-colors hover:text-[#3D69FF]"
                     >
                       {item}
                     </Link>
@@ -114,7 +114,7 @@ export default function Footer() {
                   </p>
                   <a
                     href="mailto:hello@nextway.ma"
-                    className="mt-1 block  text-sm font-medium text-zinc-200 hover:text-[#3D69FF]"
+                    className="mt-1 block text-sm font-medium text-zinc-200 hover:text-[#3D69FF]"
                   >
                     hello@nextway.ma
                   </a>
@@ -135,7 +135,7 @@ export default function Footer() {
                     {/* LinkedIn */}
                     <a
                       href="#"
-                      className="flex h-8 w-8  items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
+                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
                     >
                       <svg
                         width="14"
@@ -172,7 +172,7 @@ export default function Footer() {
                     {/* X/Twitter */}
                     <a
                       href="#"
-                      className="flex h-8 w-8  items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
+                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
                     >
                       <svg
                         width="14"
@@ -191,7 +191,7 @@ export default function Footer() {
                     {/* Instagram */}
                     <a
                       href="#"
-                      className="flex h-8 w-8  items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
+                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
                     >
                       <svg
                         width="14"
@@ -236,7 +236,7 @@ export default function Footer() {
                 <Link
                   key={link}
                   href="#"
-                  className=" text-xs text-zinc-500 transition-colors hover:text-[#3D69FF]"
+                  className="text-xs text-zinc-500 transition-colors hover:text-[#3D69FF]"
                 >
                   {link}
                 </Link>
