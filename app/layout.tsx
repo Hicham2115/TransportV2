@@ -16,9 +16,9 @@ import {
 } from "lucide-react"
 
 import { AppDock } from "@/components/AppDock"
-import { useRouter } from "next/navigation"
 import Grainient from "@/components/Grainient"
 import Footer from "@/components/Main Section/Footer"
+import SmoothScroll from "@/components/Main Section/SmoothScroll"
 // import { SmoothCursor } from "@/components/ui/smooth-cursor"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
@@ -79,6 +79,8 @@ export default function RootLayout({
         </main>
 
         <AppDock />
+
+        <SmoothScroll />
 
         {/* <SmoothCursor /> */}
       </body>
