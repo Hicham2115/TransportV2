@@ -148,7 +148,7 @@ export default function Excursions() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-white drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
           >
-            Découvrez Nos Véhicules de Luxe
+            Discover Our Luxury Vehicles
           </motion.h1>
           {SERVICES_DATA.map((section, sectionIdx) => (
             <motion.div
@@ -159,9 +159,6 @@ export default function Excursions() {
               transition={{ duration: 0.7, delay: 0.1 + sectionIdx * 0.1 }}
             >
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold text-white">
-                  {section.category}
-                </h3>
                 <p className="mt-1 text-sm text-white/90">
                   {section.description}
                 </p>
@@ -209,7 +206,7 @@ export default function Excursions() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-white drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
           >
-            Suivi médical et exigences professionnelles
+            Medical Monitoring & Professional Requirements
           </motion.h1>
           {SERVICES_DATA2.map((section, sectionIdx) => (
             <motion.div
@@ -274,11 +271,11 @@ export default function Excursions() {
               Infrastructure & Maintenance
             </p>
             <h2 className="mb-2 text-3xl font-bold text-white drop-shadow-sm md:text-4xl">
-              Maintenance premium, disponibilité totale
+              Premium Maintenance, Total Availability
             </h2>
             <p className="md:text-md mx-auto max-w-2xl text-base font-light text-white/90">
-              Des ateliers intégrés, des équipes certifiées et une logistique
-              24/7 pour garder notre flotte impeccable, partout au Maroc.
+              Integrated workshops, certified teams, and 24/7 logistics to keep
+              our fleet impeccable, everywhere in Morocco.
             </p>
           </motion.div>
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -296,12 +293,12 @@ export default function Excursions() {
                   <Car size={24} className="text-black" />
                 </span>
                 <span className="text-lg font-bold text-white">
-                  Véhicules récents
+                  Recent Vehicles
                 </span>
               </div>
               <p className="text-sm text-white">
-                Une flotte renouvelée en continu, avec un âge moyen inférieur à
-                4 ans pour garantir fiabilité et confort.
+                A continuously renewed fleet, with an average age under 4 years
+                to guarantee reliability and comfort.
               </p>
             </motion.div>
             {/* Card 2 */}
@@ -318,12 +315,12 @@ export default function Excursions() {
                   <Warehouse size={24} className="text-black" />
                 </span>
                 <span className="text-lg font-bold text-white">
-                  Grand garage à Marrakech
+                  Large Garage in Marrakech
                 </span>
               </div>
               <p className="text-sm text-white">
-                20 000 m² d’ateliers spécialisés (mécanique, tôlerie, peinture,
-                électricité, pneumatique) et équipements de pointe.
+                20,000 m² of specialized workshops (mechanics, bodywork,
+                painting, electricity, tires) and state-of-the-art equipment.
               </p>
             </motion.div>
             {/* Card 3 */}
@@ -340,12 +337,12 @@ export default function Excursions() {
                   <Fuel size={24} className="text-black" />
                 </span>
                 <span className="text-lg font-bold text-white">
-                  Station de gasoil intégrée
+                  Integrated Diesel Station
                 </span>
               </div>
               <p className="text-sm text-white">
-                Ravitaillement sécurisé sur site pour optimiser la disponibilité
-                et réduire les délais d’immobilisation.
+                Secure on-site refueling to optimize availability and reduce
+                downtime.
               </p>
             </motion.div>
             {/* Card 4 */}
@@ -362,12 +359,12 @@ export default function Excursions() {
                   <Wrench size={24} className="text-black" />
                 </span>
                 <span className="text-lg font-bold text-white">
-                  Garages régionaux
+                  Regional Garages
                 </span>
               </div>
               <p className="text-sm text-white">
-                Présence à Agadir et Ouarzazate pour une couverture rapide et un
-                suivi de proximité.
+                Presence in Agadir and Ouarzazate for rapid coverage and local
+                follow-up.
               </p>
             </motion.div>
             {/* Card 5 */}
@@ -384,12 +381,12 @@ export default function Excursions() {
                   <RadioTower size={24} className="text-black" />
                 </span>
                 <span className="text-lg font-bold text-white">
-                  Antennes d’assistance
+                  Assistance Branches
                 </span>
               </div>
               <p className="text-sm text-white">
-                Relais opérationnels à Casablanca, Agadir, Ouarzazate, Zagora et
-                Erfoud.
+                Operational branches in Casablanca, Agadir, Ouarzazate, Zagora,
+                and Erfoud.
               </p>
             </motion.div>
             {/* Card 6 */}
@@ -406,12 +403,12 @@ export default function Excursions() {
                   <UserCog size={24} className="text-black" />
                 </span>
                 <span className="text-lg font-bold text-white">
-                  Équipe technique 24/7
+                  24/7 Technical Team
                 </span>
               </div>
               <p className="text-sm text-white">
-                Mécaniciens disponibles jour et nuit, avec unité mobile
-                d’intervention partout au Maroc.
+                Mechanics available day and night, with a mobile intervention
+                unit throughout Morocco.
               </p>
             </motion.div>
           </div>
