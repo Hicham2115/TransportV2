@@ -3,10 +3,10 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#18181a] px-14 pt-14">
+    <footer className="relative overflow-hidden bg-[#18181a] px-6 pt-14 md:px-14">
       {/* Decorative slanted lines — matches your hero panel aesthetic */}
       <svg
-        className="pointer-events-none absolute top-0 right-0 z-0 h-full w-[55%]"
+        className="pointer-events-none absolute top-0 right-0 z-0 h-full w-[80%] md:w-[55%]"
         viewBox="0 0 600 400"
         fill="none"
         preserveAspectRatio="xMaxYMin meet"
@@ -26,7 +26,7 @@ export default function Footer() {
 
       <div className="relative z-10">
         {/* Main grid */}
-        <div className="grid grid-cols-2 gap-12 border-b border-white/10 pb-12">
+        <div className="grid grid-cols-1 gap-12 border-b border-white/10 pb-12 md:grid-cols-2">
           {/* Left — logo + newsletter */}
           <div className="flex flex-col justify-between gap-8">
             <div>
@@ -62,13 +62,13 @@ export default function Footer() {
               <p className="mb-2.5 text-[10px] font-semibold tracking-[0.12em] text-zinc-500 uppercase">
                 Stay updated
               </p>
-              <div className="flex">
+              <div className="flex w-full max-w-sm">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 rounded-l-[6px] border border-white/10 bg-white/5 px-3.5 py-2.5 text-sm text-white outline-none placeholder:text-zinc-500 focus:border-[#3D69FF]"
+                  className="w-full min-w-0 flex-1 rounded-l-[6px] border border-white/10 bg-white/5 px-3.5 py-2.5 text-sm text-white outline-none placeholder:text-zinc-500 focus:border-[#3D69FF]"
                 />
-                <button className="rounded-r-[6px] bg-[#2557ff] px-4 text-sm font-medium text-white transition-colors hover:bg-[#2b4bcc]">
+                <button className="shrink-0 rounded-r-[6px] bg-[#2557ff] px-4 text-sm font-medium text-white transition-colors hover:bg-[#2b4bcc]">
                   Subscribe
                 </button>
               </div>
@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
 
           {/* Right — nav + contact */}
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-12">
             <div>
               <p className="mb-3.5 text-[10px] font-semibold tracking-[0.14em] text-zinc-500 uppercase">
                 Navigation
@@ -226,11 +226,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex items-center justify-between py-5">
+        <div className="flex flex-col items-center justify-between gap-4 py-6 text-center sm:flex-row sm:text-left">
           <p className="text-xs text-zinc-500">
             ©{new Date().getFullYear()} LOGO NAME. All rights reserved.
           </p>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
             {["Privacy policy", "Terms of use", "Cookie settings"].map(
               (link) => (
                 <Link

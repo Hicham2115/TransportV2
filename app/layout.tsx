@@ -18,6 +18,7 @@ import {
 import Dock from "../components/Dock"
 import { useRouter } from "next/navigation"
 import Grainient from "@/components/Grainient"
+import Footer from "@/components/Main Section/Footer"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -110,7 +111,10 @@ export default function RootLayout({
         </div>
 
         {/* Content */}
-        <main className="relative z-10 min-h-screen">{children}</main>
+        <main className="relative z-10 min-h-screen">
+          {children}
+          <Footer />
+        </main>
 
         {/* Dock (fixed at bottom) */}
         <div className="fixed bottom-4 left-1/2 z-20 -translate-x-1/2">
