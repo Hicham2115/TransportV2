@@ -88,7 +88,7 @@ function Contact() {
               variants={itemVariants}
               className="text-xl font-semibold text-white/90 md:text-xl"
             >
-              Nous parler
+              Talk to us
             </motion.span>
           </motion.div>
 
@@ -106,10 +106,10 @@ function Contact() {
                   variants={itemVariants}
                   className="flex flex-col gap-2"
                 >
-                  <label className="text-sm font-semibold">Nom complet</label>
+                  <label className="text-sm font-semibold">Full Name</label>
                   <input
                     type="text"
-                    placeholder="Votre nom"
+                    placeholder="Your name"
                     className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-[#3D69FF] focus:outline-none"
                   />
                 </motion.div>
@@ -117,7 +117,7 @@ function Contact() {
                   variants={itemVariants}
                   className="flex flex-col gap-2"
                 >
-                  <label className="text-sm font-semibold">Adresse email</label>
+                  <label className="text-sm font-semibold">Email Address</label>
                   <input
                     type="email"
                     placeholder="votre@email.com"
@@ -132,7 +132,7 @@ function Contact() {
                   variants={itemVariants}
                   className="flex flex-col gap-2"
                 >
-                  <label className="text-sm font-semibold">Téléphone</label>
+                  <label className="text-sm font-semibold">Phone Number</label>
                   <input
                     type="tel"
                     placeholder="+212 6XX XXX XXX"
@@ -143,10 +143,10 @@ function Contact() {
                   variants={itemVariants}
                   className="flex flex-col gap-2"
                 >
-                  <label className="text-sm font-semibold">Sujet</label>
+                  <label className="text-sm font-semibold">Subject</label>
                   <input
                     type="text"
-                    placeholder="Objet de votre message"
+                    placeholder="Subject of your message"
                     className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-[#3D69FF] focus:outline-none"
                   />
                 </motion.div>
@@ -179,7 +179,7 @@ function Contact() {
                 </span>
 
                 <span className="relative flex items-center gap-2">
-                  Envoyer le message
+                  Send Message
                   <svg
                     className="h-4 w-4 cursor-pointer transition-transform duration-300 group-hover:translate-x-1"
                     fill="none"
