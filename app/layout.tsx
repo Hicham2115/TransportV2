@@ -19,7 +19,7 @@ import { AppDock } from "@/components/AppDock"
 import { useRouter } from "next/navigation"
 import Grainient from "@/components/Grainient"
 import Footer from "@/components/Main Section/Footer"
-import { SmoothCursor } from "@/components/ui/smooth-cursor"
+// import { SmoothCursor } from "@/components/ui/smooth-cursor"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -80,7 +80,7 @@ export default function RootLayout({
 
         <AppDock />
 
-        <SmoothCursor />
+        {/* <SmoothCursor /> */}
       </body>
     </html>
   )

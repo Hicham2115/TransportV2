@@ -172,17 +172,17 @@ function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="group relative inline-flex items-center justify-center overflow-hidden bg-[#3D69FF] px-8 py-3.5 font-medium text-white shadow-[0_0_30px_rgba(61,105,255,0.3)] transition-all duration-300 ease-out hover:bg-[#2557ff] hover:shadow-[0_0_50px_rgba(61,105,255,0.5)]"
+                className="group relative inline-flex  items-center justify-center overflow-hidden bg-[#3D69FF] px-8 py-3.5 font-medium text-white shadow-[0_0_30px_rgba(61,105,255,0.3)] transition-all duration-300 ease-out hover:bg-[#2557ff] hover:shadow-[0_0_50px_rgba(61,105,255,0.5)] cursor-pointer"
               >
                 {/* Shine sweep effect */}
-                <span className="absolute inset-0 flex h-full w-full [transform:skew(-13deg)_translateX(-150%)] justify-center group-hover:[transform:skew(-13deg)_translateX(150%)] group-hover:duration-1000">
+                <span className="absolute inset-0 flex h-full w-full [transform:skew(-13deg)_translateX(-150%)] justify-center group-hover:[transform:skew(-13deg)_translateX(150%)] group-hover:duration-1000 cursor-pointer">
                   <div className="relative h-full w-10 bg-white/20 blur-md" />
                 </span>
 
-                <span className="relative flex items-center gap-2">
+                <span className="relative flex  items-center gap-2">
                   Envoyer le message
                   <svg
-                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 cursor-pointer"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

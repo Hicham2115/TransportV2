@@ -132,7 +132,7 @@ function SecondSection() {
                   key={service.id}
                   onMouseEnter={() => setActiveItem(service)}
                   onClick={() => setActiveItem(service)}
-                  className="group relative cursor-pointer border-b border-white/10 py-6 last:border-0"
+                  className="group relative  border-b border-white/10 py-6 last:border-0 cursor-pointer"
                 >
                   <motion.div
                     animate={{
@@ -140,7 +140,7 @@ function SecondSection() {
                       color: isActive ? "#ffffff" : "rgba(255,255,255,0.3)",
                     }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="flex items-start gap-2 group-hover:text-white/60"
+                    className="flex items-start gap-2 group-hover:text-white/60 cursor-pointer"
                   >
                     <h2 className="text-3xl font-bold tracking-tight md:text-5xl lg:text-6xl">
                       {service.title}

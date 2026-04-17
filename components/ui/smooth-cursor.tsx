@@ -213,7 +213,7 @@ export function SmoothCursor({
       })
     }
 
-    document.body.style.cursor = "none"
+    
     window.addEventListener("pointermove", throttledPointerMove, {
       passive: true,
     })

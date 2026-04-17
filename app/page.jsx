@@ -20,7 +20,6 @@ function Page() {
       <FourthSection />
 
       <Contact />
-  
     </div>
   )
 }

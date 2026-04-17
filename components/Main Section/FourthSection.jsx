@@ -125,20 +125,20 @@ function FourthSection() {
           variants={itemVariants}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-lg px-6 py-3 text-white uppercase transition-all duration-300 ease-in-out focus:outline focus:outline-2 focus:outline-offset-4 focus:outline-white sm:w-auto sm:px-8 sm:py-4"
+          className="group relative inline-flex w-full  items-center justify-center overflow-hidden rounded-lg px-6 py-3 text-white uppercase transition-all duration-300 ease-in-out focus:outline focus:outline-2 focus:outline-offset-4 focus:outline-white sm:w-auto sm:px-8 sm:py-4 cursor-pointer"
         >
-          <span className="relative z-20 text-sm font-semibold sm:text-base">
+          <span className="relative z-20  text-sm font-semibold sm:text-base">
             Get in Touch
           </span>
 
           {/* shine effect */}
-          <span className="absolute top-0 left-[-80%] z-10 h-full w-[50%] rotate-12 bg-white/20 blur-lg transition-all duration-1000 group-hover:left-[130%]" />
+          <span className="absolute top-0 left-[-80%] z-10 h-full w-[50%] rotate-12 bg-white/20 blur-lg transition-all duration-1000 group-hover:left-[130%] cursor-pointer" />
 
           {/* borders */}
-          <span className="absolute top-0 left-0 h-[20%] w-1/2 border-t-2 border-l-2 border-[#D4EDF9]" />
-          <span className="absolute top-0 right-0 h-[60%] w-1/2 border-t-2 border-r-2 border-[#D4EDF9] transition-all duration-300 group-hover:h-[90%]" />
-          <span className="absolute bottom-0 left-0 h-[60%] w-1/2 border-b-2 border-l-2 border-[#D4EDF9] transition-all duration-300 group-hover:h-[90%]" />
-          <span className="absolute right-0 bottom-0 h-[20%] w-1/2 border-r-2 border-b-2 border-[#D4EDF9]" />
+          <span className="absolute top-0 left-0 h-[20%] w-1/2  border-t-2 border-l-2 border-[#D4EDF9]" />
+          <span className="absolute top-0 right-0 h-[60%] w-1/2  border-t-2 border-r-2 border-[#D4EDF9] transition-all duration-300 group-hover:h-[90%] cursor-pointer" />
+          <span className="absolute bottom-0 left-0 h-[60%] w-1/2  border-b-2 border-l-2 border-[#D4EDF9] transition-all duration-300 group-hover:h-[90%] cursor-pointer" />
+          <span className="absolute right-0 bottom-0 h-[20%] w-1/2  border-r-2 border-b-2 border-[#D4EDF9]" />
         </motion.button>
       </motion.div>
     </section>

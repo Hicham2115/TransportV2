@@ -55,10 +55,10 @@ function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="group text-md relative inline-block cursor-pointer font-serif text-white"
+          className="group text-md relative inline-block  font-serif text-white cursor-pointer"
         >
           hello@bogixglobal.com
-          <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full" />
+          <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full cursor-pointer" />
         </motion.span>
       </div>
 
@@ -76,8 +76,8 @@ function FAQ() {
           defaultValue="shipping"
           className="w-full"
         >
-          <AccordionItem value="booking-time">
-            <AccordionTrigger className="font-bold">
+          <AccordionItem value="booking-time ">
+            <AccordionTrigger className=" font-bold">
               How fast can I book a vehicle?
             </AccordionTrigger>
             <AccordionContent className="">
@@ -87,7 +87,7 @@ function FAQ() {
           </AccordionItem>
 
           <AccordionItem value="locations">
-            <AccordionTrigger className="font-bold">
+            <AccordionTrigger className=" font-bold">
               Where are your services available?
             </AccordionTrigger>
             <AccordionContent className="">
@@ -97,7 +97,7 @@ function FAQ() {
           </AccordionItem>
 
           <AccordionItem value="vehicles">
-            <AccordionTrigger className="font-bold">
+            <AccordionTrigger className=" font-bold">
               What types of vehicles do you offer?
             </AccordionTrigger>
             <AccordionContent className="">
@@ -107,7 +107,7 @@ function FAQ() {
           </AccordionItem>
 
           <AccordionItem value="requirements">
-            <AccordionTrigger className="font-bold">
+            <AccordionTrigger className=" font-bold">
               What do I need to rent a car?
             </AccordionTrigger>
             <AccordionContent className="">
@@ -118,7 +118,7 @@ function FAQ() {
           </AccordionItem>
 
           <AccordionItem value="flexibility">
-            <AccordionTrigger className="font-bold">
+            <AccordionTrigger className=" font-bold">
               Can I modify or cancel my booking?
             </AccordionTrigger>
             <AccordionContent className="">

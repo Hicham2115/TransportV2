@@ -61,9 +61,9 @@ function ThirdSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="group relative w-full max-w-xl overflow-hidden rounded-2xl md:w-1/2"
+          className="group relative w-full max-w-xl overflow-hidden rounded-2xl md:w-1/2 cursor-pointer"
         >
-          <div className="transition-transform duration-500 group-hover:scale-105">
+          <div className="transition-transform duration-500 group-hover:scale-105 cursor-pointer">
             <Image
               src={img3}
               alt="Car rental service"
@@ -72,7 +72,7 @@ function ThirdSection() {
           </div>
 
           {/* TEXT */}
-          <div className="absolute right-0 bottom-0 left-0 translate-y-4 p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+          <div className="absolute right-0 bottom-0 left-0 translate-y-4 p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 cursor-pointer">
             <h3 className="text-[16px] font-bold text-white">
               Premium Car Rentals
             </h3>
@@ -111,19 +111,19 @@ function ThirdSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: card.delay }}
-            className="group relative w-full md:w-1/3"
+            className="group relative w-full md:w-1/3 cursor-pointer"
           >
             {/* Card */}
-            <div className="relative h-full rounded-2xl bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 group-hover:bg-white/10">
+            <div className="relative h-full rounded-2xl bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 group-hover:bg-white/10 cursor-pointer">
               {/* Shine effect */}
               <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-2xl">
-                <div className="absolute top-0 -left-full h-full w-[200%] bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 transition-all duration-700 group-hover:left-full group-hover:opacity-100" />
+                <div className="absolute top-0 -left-full h-full w-[200%] bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 transition-all duration-700 group-hover:left-full group-hover:opacity-100 cursor-pointer" />
               </div>
 
               {/* Content */}
               <div className="relative z-10 text-white">
                 {/* Icon */}
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-white transition-all duration-300 group-hover:scale-110 group-hover:bg-white/20">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-white transition-all duration-300 group-hover:scale-110 group-hover:bg-white/20 cursor-pointer">
                   {card.icon}
                 </div>
 

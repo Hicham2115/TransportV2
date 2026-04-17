@@ -75,25 +75,25 @@ function FirstSection() {
       {/* IMAGE CONTAINER */}
       <div className="mt-10 flex w-full flex-col justify-center gap-2 md:flex-row">
         {/* Image 1 */}
-        <div className="group relative w-80 overflow-hidden rounded-2xl shadow-md md:w-100">
-          <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
+        <div className="group relative w-80 overflow-hidden rounded-2xl shadow-md md:w-100 cursor-pointer">
+          <div className="h-full w-full transition-transform duration-500 group-hover:scale-105 cursor-pointer">
             <Image
               src={img1}
               alt="Image 1"
-              className="h-full w-full cursor-pointer object-cover [clip-path:polygon(28px_0,100%_0,100%_100%,0_100%,0_38px)]"
+              className="h-full w-full  object-cover [clip-path:polygon(28px_0,100%_0,100%_100%,0_100%,0_38px)]"
             />
           </div>
 
           {/* Badge */}
-          <span className="absolute top-2.5 right-2.5 z-10 rounded-full border border-white/30 bg-white/20 px-2.5 py-0.5 text-[11px] font-medium tracking-wide text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
+          <span className="absolute top-2.5 right-2.5 z-10 rounded-full border border-white/30 bg-white/20 px-2.5 py-0.5 text-[11px] font-medium tracking-wide text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100 cursor-pointer">
             Rentals
           </span>
 
           {/* Overlay */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 transition-opacity duration-500 [clip-path:polygon(28px_0,100%_0,100%_100%,0_100%,0_38px)] group-hover:opacity-100" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 transition-opacity duration-500 [clip-path:polygon(28px_0,100%_0,100%_100%,0_100%,0_38px)] group-hover:opacity-100 cursor-pointer" />
 
           {/* Text */}
-          <div className="absolute right-0 bottom-0 left-0 translate-y-3 p-3.5 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
+          <div className="absolute right-0 bottom-0 left-0 translate-y-3 p-3.5 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100 cursor-pointer">
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>
@@ -104,25 +104,25 @@ function FirstSection() {
         </div>
 
         {/* Image 2 */}
-        <div className="group relative w-80 overflow-hidden rounded-2xl shadow-md md:w-100">
-          <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
+        <div className="group relative w-80 overflow-hidden rounded-2xl shadow-md md:w-100 cursor-pointer">
+          <div className="h-full w-full transition-transform duration-500 group-hover:scale-105 cursor-pointer">
             <Image
               src={img2}
               alt="Image 2"
-              className="h-full w-full cursor-pointer object-cover"
+              className="h-full w-full  object-cover"
             />
           </div>
 
           {/* Badge */}
-          <span className="absolute top-2.5 right-2.5 z-10 rounded-full border border-white/30 bg-white/20 px-2.5 py-0.5 text-[11px] font-medium tracking-wide text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
+          <span className="absolute top-2.5 right-2.5 z-10 rounded-full border border-white/30 bg-white/20 px-2.5 py-0.5 text-[11px] font-medium tracking-wide text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100 cursor-pointer">
             Rentals
           </span>
 
           {/* Overlay */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 transition-opacity duration-500 [clip-path:polygon(28px_0,100%_0,100%_100%,0_100%,0_38px)] group-hover:opacity-100" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 transition-opacity duration-500 [clip-path:polygon(28px_0,100%_0,100%_100%,0_100%,0_38px)] group-hover:opacity-100 cursor-pointer" />
 
           {/* Text */}
-          <div className="absolute right-0 bottom-0 left-0 translate-y-3 p-3.5 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
+          <div className="absolute right-0 bottom-0 left-0 translate-y-3 p-3.5 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100 cursor-pointer">
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>
@@ -133,25 +133,25 @@ function FirstSection() {
         </div>
 
         {/* Image 3 */}
-        <div className="group relative w-80 overflow-hidden rounded-2xl md:w-100">
-          <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
+        <div className="group relative w-80 overflow-hidden rounded-2xl md:w-100 cursor-pointer">
+          <div className="h-full w-full transition-transform duration-500 group-hover:scale-105 cursor-pointer">
             <Image
               src={img3}
               alt="Image 3"
-              className="h-full w-full cursor-pointer object-cover [clip-path:polygon(0_0,100%_0,100%_calc(100%-38px),calc(100%-28px)_100%,0_100%)]"
+              className="h-full w-full  object-cover [clip-path:polygon(0_0,100%_0,100%_calc(100%-38px),calc(100%-28px)_100%,0_100%)]"
             />
           </div>
 
           {/* Badge */}
-          <span className="absolute top-2.5 right-2.5 z-10 rounded-full border border-white/30 bg-white/20 px-2.5 py-0.5 text-[11px] font-medium tracking-wide text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
+          <span className="absolute top-2.5 right-2.5 z-10 rounded-full border border-white/30 bg-white/20 px-2.5 py-0.5 text-[11px] font-medium tracking-wide text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100 cursor-pointer">
             Rentals
           </span>
 
           {/* Overlay */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 transition-opacity duration-500 [clip-path:polygon(28px_0,100%_0,100%_100%,0_100%,0_38px)] group-hover:opacity-100" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 transition-opacity duration-500 [clip-path:polygon(28px_0,100%_0,100%_100%,0_100%,0_38px)] group-hover:opacity-100 cursor-pointer" />
 
           {/* Text */}
-          <div className="absolute right-0 bottom-0 left-0 translate-y-3 p-3.5 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
+          <div className="absolute right-0 bottom-0 left-0 translate-y-3 p-3.5 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100 cursor-pointer">
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>

@@ -33,7 +33,7 @@ export default function Component() {
           <Popover>
             <PopoverTrigger asChild>
               <Button
-                className="group size-8 md:hidden"
+                className="group size-8 md:hidden cursor-pointer"
                 size="icon"
                 variant="ghost"
               >
@@ -50,15 +50,15 @@ export default function Component() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    className="origin-center -translate-y-[7px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-x-0 group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[315deg]"
+                    className="origin-center -translate-y-[7px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-x-0 group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[315deg] cursor-pointer"
                     d="M4 12L20 12"
                   />
                   <path
-                    className="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] group-aria-expanded:rotate-45"
+                    className="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] group-aria-expanded:rotate-45 cursor-pointer"
                     d="M4 12H20"
                   />
                   <path
-                    className="origin-center translate-y-[7px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[135deg]"
+                    className="origin-center translate-y-[7px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[135deg] cursor-pointer"
                     d="M4 12H20"
                   />
                 </svg>
@@ -80,7 +80,7 @@ export default function Component() {
                   ))}
                   <div className="mt-2 flex flex-col-reverse gap-2">
                     <Link href="/contact-us">
-                      <button className="relative inline-flex h-8 overflow-hidden rounded-md p-[1px] whitespace-nowrap transition focus:outline-none active:scale-95">
+                      <button className="relative inline-flex h-8 overflow-hidden rounded-md p-[1px] whitespace-nowrap transition focus:outline-none active:scale-95 cursor-pointer">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
 
                         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-1 rounded-md bg-slate-950 px-3 text-xs font-medium text-white backdrop-blur-3xl">
@@ -135,7 +135,7 @@ export default function Component() {
 
               {/* <Button
                 asChild
-                className="group relative px-4 py-3 bg-blue-700 text-white font-bold rounded  hover:text-white hover:bg-[#5226ff] transition-all duration-300 hover:scale-105 flex items-center gap-2 w-full sm:w-auto justify-center"
+                className="group relative px-4 py-3 bg-blue-700 text-white font-bold rounded  hover:text-white hover:bg-[#5226ff] transition-all duration-300 hover:scale-105 flex items-center gap-2 w-full sm:w-auto justify-center cursor-pointer"
                 size="sm"
                 variant="ghost"
               >
