@@ -11,8 +11,11 @@ import img4 from "@/app/assets/sprintershow1920.jpg"
 import img5 from "@/app/assets/vito_1024.webp"
 import img6 from "@/app/assets/PACKPRADO.jpg"
 
+import img7 from "@/app/assets/EQUIPE1200.webp"
+import img8 from "@/app/assets/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg"
+import img9 from "@/app/assets/nrd-aMmDIsdnUro-unsplash.jpg"
 import Image from "next/image"
-import { CalendarCheck2, MapPinCheckInside, ShieldCheck } from "lucide-react"
+import { Car, Warehouse, Fuel, Wrench, RadioTower, UserCog } from "lucide-react"
 
 const SERVICES_DATA = [
   {
@@ -49,15 +52,41 @@ const SERVICES_DATA = [
         title: "Prado – Adventure & Comfort",
         desc: "Over 50 robust SUVs with 5 seats, designed for adventurous journeys and off-road excursions, combining durability with comfort.",
         img: img6.src,
-      }
+      },
     ],
   },
 ]
+
+const SERVICES_DATA2 = [
+  {
+    category: "Driver Health & Safety Standards",
+    description:
+      "We ensure the highest level of safety, professionalism, and reliability through strict medical and performance monitoring of all our drivers.",
+    items: [
+      {
+        title: "Annual Medical Monitoring",
+        desc: "Each driver undergoes comprehensive health monitoring, including medical check-ups, physical evaluations, and preventive care support. Regular screenings ensure long-term reliability and safety.",
+        img: img8.src,
+      },
+      {
+        title: "Enhanced Vision Testing",
+        desc: "Vision and reflex tests are regularly scheduled to guarantee maximum alertness and safe driving performance, in full compliance with road safety standards.",
+        img: img9.src,
+      },
+      {
+        title: "Professionalism & Excellence",
+        desc: "Our drivers maintain a premium standard of professionalism through proper appearance, respectful behavior, discretion, courtesy, and strong customer service values.",
+        img: img7.src,
+      },
+    ],
+  },
+]
+
 export default function Excursions() {
   const [activeArticle, setActiveArticle] = useState(0)
 
   return (
-    <div className="relative z-10 min-h-screen overflow-hidden bg-transparent px-6 pt-32 pb-24 md:px-14">
+    <div className="relative z-10 min-h-screen overflow-hidden bg-transparent px-6 pt-32 md:px-14">
       <div className="mx-auto max-w-7xl">
         {/* HEADER */}
         <div className="text-center">
@@ -105,17 +134,30 @@ export default function Excursions() {
         </div>
 
         {/* SERVICES */}
-        <div className="mt-37 space-y-24">
+        <motion.div
+          className="mt-37 space-y-14"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2 }}
             className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-white drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
           >
             Découvrez Nos Véhicules de Luxe
           </motion.h1>
-          {SERVICES_DATA.map((section) => (
-            <div key={section.category}>
+          {SERVICES_DATA.map((section, sectionIdx) => (
+            <motion.div
+              key={section.category}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, delay: 0.1 + sectionIdx * 0.1 }}
+            >
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold text-white">
                   {section.category}
@@ -126,11 +168,15 @@ export default function Excursions() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-8">
-                {section.items.map((item) => (
+                {section.items.map((item, itemIdx) => (
                   <motion.div
                     key={item.title}
-                    whileHover={{ y: -8 }}
                     className="w-full items-start overflow-hidden rounded-2xl border border-white/10 bg-[#18181a4b] md:w-[48%] md:items-center lg:w-[30%]"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.6, delay: 0.2 + itemIdx * 0.1 }}
+                    whileHover={{ scale: 1.03, y: -6 }}
                   >
                     <div className="aspect-video overflow-hidden">
                       <img
@@ -146,9 +192,230 @@ export default function Excursions() {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
+        <motion.div
+          className="mt-37 space-y-14"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-white drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
+          >
+            Suivi médical et exigences professionnelles
+          </motion.h1>
+          {SERVICES_DATA2.map((section, sectionIdx) => (
+            <motion.div
+              key={section.category}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, delay: 0.1 + sectionIdx * 0.1 }}
+            >
+              <div className="mb-8">
+                <h3 className="text-2xl font-semibold text-white">
+                  {section.category}
+                </h3>
+                <p className="mt-1 text-sm text-white/90">
+                  {section.description}
+                </p>
+              </div>
+              <div className="flex flex-wrap justify-center gap-8">
+                {section.items.map((item, itemIdx) => (
+                  <motion.div
+                    key={item.title}
+                    className="w-full items-start overflow-hidden rounded-2xl border border-white/10 bg-[#18181a4b] md:w-[48%] md:items-center lg:w-[30%]"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.6, delay: 0.2 + itemIdx * 0.1 }}
+                    whileHover={{ scale: 1.03, y: -6 }}
+                  >
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={item.img}
+                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                      />
+                    </div>
+
+                    <div className="p-5">
+                      <h4 className="font-semibold text-white">{item.title}</h4>
+                      <p className="mt-2 text-sm text-white/90">{item.desc}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+        {/* MAINTENANCE & INFRASTRUCTURE SECTION */}
+        <motion.section
+          className="mt-32 mb-24"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div
+            className="mb-14 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
+            <p className="mb-2 text-xs font-semibold tracking-[0.2em] uppercase">
+              Infrastructure & Maintenance
+            </p>
+            <h2 className="mb-2 text-3xl font-bold text-white drop-shadow-sm md:text-4xl">
+              Maintenance premium, disponibilité totale
+            </h2>
+            <p className="md:text-md mx-auto max-w-2xl text-base font-light text-white/90">
+              Des ateliers intégrés, des équipes certifiées et une logistique
+              24/7 pour garder notre flotte impeccable, partout au Maroc.
+            </p>
+          </motion.div>
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {/* Card 1 */}
+            <motion.div
+              className="flex flex-col gap-2 rounded-2xl border border-[#18181a4b] bg-[#18181a4b] p-7 shadow-xl transition-all hover:shadow-2xl"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              whileHover={{ scale: 1.03, y: -6 }}
+            >
+              <div className="mb-2 flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                  <Car size={24} className="text-black" />
+                </span>
+                <span className="text-lg font-bold text-white">
+                  Véhicules récents
+                </span>
+              </div>
+              <p className="text-sm text-white">
+                Une flotte renouvelée en continu, avec un âge moyen inférieur à
+                4 ans pour garantir fiabilité et confort.
+              </p>
+            </motion.div>
+            {/* Card 2 */}
+            <motion.div
+              className="flex flex-col gap-2 rounded-2xl border border-[#18181a4b] bg-[#18181a4b] p-7 shadow-xl transition-all hover:shadow-2xl md:col-span-2"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ scale: 1.03, y: -6 }}
+            >
+              <div className="mb-2 flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                  <Warehouse size={24} className="text-black" />
+                </span>
+                <span className="text-lg font-bold text-white">
+                  Grand garage à Marrakech
+                </span>
+              </div>
+              <p className="text-sm text-white">
+                20 000 m² d’ateliers spécialisés (mécanique, tôlerie, peinture,
+                électricité, pneumatique) et équipements de pointe.
+              </p>
+            </motion.div>
+            {/* Card 3 */}
+            <motion.div
+              className="flex flex-col gap-2 rounded-2xl border border-[#18181a4b] bg-[#18181a4b] p-7 shadow-xl transition-all hover:shadow-2xl"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              whileHover={{ scale: 1.03, y: -6 }}
+            >
+              <div className="mb-2 flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                  <Fuel size={24} className="text-black" />
+                </span>
+                <span className="text-lg font-bold text-white">
+                  Station de gasoil intégrée
+                </span>
+              </div>
+              <p className="text-sm text-white">
+                Ravitaillement sécurisé sur site pour optimiser la disponibilité
+                et réduire les délais d’immobilisation.
+              </p>
+            </motion.div>
+            {/* Card 4 */}
+            <motion.div
+              className="flex flex-col gap-2 rounded-2xl border border-[#18181a4b] bg-[#18181a4b] p-7 shadow-xl transition-all hover:shadow-2xl"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              whileHover={{ scale: 1.03, y: -6 }}
+            >
+              <div className="mb-2 flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                  <Wrench size={24} className="text-black" />
+                </span>
+                <span className="text-lg font-bold text-white">
+                  Garages régionaux
+                </span>
+              </div>
+              <p className="text-sm text-white">
+                Présence à Agadir et Ouarzazate pour une couverture rapide et un
+                suivi de proximité.
+              </p>
+            </motion.div>
+            {/* Card 5 */}
+            <motion.div
+              className="flex flex-col gap-2 rounded-2xl border border-[#18181a4b] bg-[#18181a4b] p-7 shadow-xl transition-all hover:shadow-2xl"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              whileHover={{ scale: 1.03, y: -6 }}
+            >
+              <div className="mb-2 flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+                  <RadioTower size={24} className="text-black" />
+                </span>
+                <span className="text-lg font-bold text-white">
+                  Antennes d’assistance
+                </span>
+              </div>
+              <p className="text-sm text-white">
+                Relais opérationnels à Casablanca, Agadir, Ouarzazate, Zagora et
+                Erfoud.
+              </p>
+            </motion.div>
+            {/* Card 6 */}
+            <motion.div
+              className="flex flex-col gap-2 rounded-2xl border border-[#18181a4b] bg-[#18181a4b] p-7 shadow-xl transition-all hover:shadow-2xl md:col-span-3"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              whileHover={{ scale: 1.03, y: -6 }}
+            >
+              <div className="mb-2 flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-blue-700">
+                  <UserCog size={24} className="text-black" />
+                </span>
+                <span className="text-lg font-bold text-white">
+                  Équipe technique 24/7
+                </span>
+              </div>
+              <p className="text-sm text-white">
+                Mécaniciens disponibles jour et nuit, avec unité mobile
+                d’intervention partout au Maroc.
+              </p>
+            </motion.div>
+          </div>
+        </motion.section>
       </div>
     </div>
   )
