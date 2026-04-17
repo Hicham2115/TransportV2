@@ -159,7 +159,7 @@ function Contact() {
               >
                 <label className="text-sm font-bold">Message</label>
                 <textarea
-                  placeholder="Écrivez votre message ici..."
+                  placeholder="Write your message here..."
                   rows={5}
                   className="w-full resize-none border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-[#3D69FF] focus:outline-none"
                 />
