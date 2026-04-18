@@ -5,13 +5,13 @@ import Image from "next/image"
 import { motion } from "motion/react"
 import TextType from "@/components/TextType"
 
-import prado from "@/app/assets/ben-hessler-iXrme6sBsVE-unsplash.jpg"
+import prado from "@/app/assets/janosch-diggelmann-hL7rNgAUEBQ-unsplash.jpg"
 import pavel1 from "@/app/assets/daniel-bertrams-1hcGR1xTGhg-unsplash.jpg"
-import pavel2 from "@/app/assets/janosch-diggelmann-hL7rNgAUEBQ-unsplash.jpg"
+import pavel2 from "@/app/assets/miltiadis-fragkidis-ILxHs003uMc-unsplash.jpg"
 import shkraba from "@/app/assets/pexels-bayram-yalcin-86843184-15071551.jpg"
 import vito from "@/app/assets/pexels-georgesultan-11877372.jpg"
-import sprinter from "@/app/assets/pexels-georgesultan-11877372.jpg"
-import man48 from "@/app/assets/samuel-girven-NGbtPRrEujY-unsplash.jpg"
+import sprinter from "@/app/assets/martin-baron-PPWUPLWYY5s-unsplash.jpg"
+import man48 from "@/app/assets/abdou-faiz-lA-P8-vagrI-unsplash.jpg"
 
 const TIMELINE_DATA = [
   {

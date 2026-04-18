@@ -2,6 +2,12 @@ import React from "react"
 import Link from "next/link"
 
 export default function Footer() {
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "Excursions", href: "/Excursions" },
+    { name: "Our Story", href: "/OurStory" },
+    { name: "Our Fleet", href: "/Fleet" },
+  ]
   return (
     <footer className="relative overflow-hidden bg-[#18181a] px-6 pt-14 md:px-14">
       {/* Decorative slanted lines — matches your hero panel aesthetic */}
@@ -82,14 +88,14 @@ export default function Footer() {
                 Navigation
               </p>
               <nav className="flex flex-col gap-2.5">
-                {["Home", "Excursions", "Our Story", "Our Fleet"].map(
-                  (item) => (
+                {navLinks.map(
+                  (link) => (
                     <Link
-                      key={item}
-                      href="#"
+                      key={link.name}
+                      href={link.href}
                       className="text-sm text-zinc-400 transition-colors hover:text-[#3D69FF]"
                     >
-                      {item}
+                      {link.name}
                     </Link>
                   )
                 )}
