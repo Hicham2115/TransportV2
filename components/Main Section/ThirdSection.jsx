@@ -73,10 +73,10 @@ function ThirdSection() {
 
           {/* TEXT */}
           <div className="absolute right-0 bottom-0 left-0 translate-y-4 cursor-pointer p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-            <h3 className="text-[16px] font-bold text-black">
+            <h3 className="text-[16px] font-bold text-white">
               Premium Car Rentals
             </h3>
-            <p className="text-[12px] text-black/80">
+            <p className="text-[12px] text-white/80">
               Luxury fleet, flexible booking, instant availability
             </p>
           </div>
