@@ -22,10 +22,8 @@ function FAQ() {
           transition={{ duration: 0.7 }}
           className="flex items-center gap-4"
         >
-          <div className="h-14 w-[2px] rounded-full bg-white" />
-          <h2 className="text-3xl font-bold tracking-wide text-white">
-            Why Us
-          </h2>
+          <div className="h-14 w-[2px] rounded-full bg-brand-red" />
+          <h2 className="text-3xl font-bold tracking-wide text-black">FAQ</h2>
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -44,22 +42,27 @@ function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-md mt-4 mb-1 max-w-md font-semibold text-white"
+          className="text-md mt-4 mb-1 max-w-md font-semibold text-black"
         >
           Can't find what you're looking for? <br />{" "}
-          <span className="">Contact us here:</span>
+          <span className="">
+            Contact us here:{" "}
+            <span className="font-light text-brand-red italic">
+              hello@bogixglobal.com
+            </span>
+          </span>
         </motion.p>
 
-        <motion.span
+        {/* <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="group text-md relative inline-block  font-serif text-white cursor-pointer"
+          className="group text-md relative inline-block cursor-pointer font-serif text-black"
         >
           hello@bogixglobal.com
-          <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full cursor-pointer" />
-        </motion.span>
+          <span className="absolute -bottom-1 left-0 h-[1px] w-0 cursor-pointer bg-white transition-all duration-300 group-hover:w-full" />
+        </motion.span> */}
       </div>
 
       {/* RIGHT SIDE */}
@@ -77,7 +80,7 @@ function FAQ() {
           className="w-full"
         >
           <AccordionItem value="booking-time ">
-            <AccordionTrigger className=" font-bold">
+            <AccordionTrigger className="font-bold text-brand-gold">
               How fast can I book a vehicle?
             </AccordionTrigger>
             <AccordionContent className="">
@@ -87,7 +90,7 @@ function FAQ() {
           </AccordionItem>
 
           <AccordionItem value="locations">
-            <AccordionTrigger className=" font-bold">
+            <AccordionTrigger className="font-bold">
               Where are your services available?
             </AccordionTrigger>
             <AccordionContent className="">
@@ -97,7 +100,7 @@ function FAQ() {
           </AccordionItem>
 
           <AccordionItem value="vehicles">
-            <AccordionTrigger className=" font-bold">
+            <AccordionTrigger className="font-bold text-brand-gold">
               What types of vehicles do you offer?
             </AccordionTrigger>
             <AccordionContent className="">
@@ -107,7 +110,7 @@ function FAQ() {
           </AccordionItem>
 
           <AccordionItem value="requirements">
-            <AccordionTrigger className=" font-bold">
+            <AccordionTrigger className="font-bold">
               What do I need to rent a car?
             </AccordionTrigger>
             <AccordionContent className="">
@@ -118,7 +121,7 @@ function FAQ() {
           </AccordionItem>
 
           <AccordionItem value="flexibility">
-            <AccordionTrigger className=" font-bold">
+            <AccordionTrigger className="font-bold text-brand-gold">
               Can I modify or cancel my booking?
             </AccordionTrigger>
             <AccordionContent className="">

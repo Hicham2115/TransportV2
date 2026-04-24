@@ -66,17 +66,17 @@ function SecondSection() {
           backgroundImage: `url(${activeItem?.image?.src || activeItem?.image})`,
         }}
       >
-        <div className="absolute inset-0 bg-[#1a1c22]/80 backdrop-blur-xl"></div>
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-2xl"></div>
       </div>
 
       <div className="relative z-10 pb-20">
         <div className="flex flex-col gap-6 px-6 pt-20 md:flex-row md:items-center md:justify-between md:px-20">
-          <h1 className="font-serif text-[30px] leading-tight font-light text-blue-400 drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)]">
+          <h1 className="font-serif text-[30px] leading-tight font-light text-brand-gold drop-shadow-[0_2px_40px_rgba(196,146,42,0.25)]">
             LOGO NAME
           </h1>
           <div className="flex items-center gap-4">
-            <div className="h-10 w-[2px] rounded-full bg-blue-400 md:h-14" />
-            <h2 className="text-2xl font-bold tracking-wide text-blue-400 md:text-3xl">
+            <div className="h-10 w-[2px] rounded-full bg-brand-red md:h-14" />
+            <h2 className="text-2xl font-bold tracking-wide text-white md:text-3xl">
               Our Services
             </h2>
           </div>
@@ -112,7 +112,7 @@ function SecondSection() {
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   className="flex flex-col gap-2"
                 >
-                  <h3 className="text-md font-bold text-blue-300">
+                  <h3 className="text-md font-bold text-brand-gold">
                     {activeItem?.title}
                   </h3>
                   <p className="text-sm leading-relaxed font-light text-gray-200">
@@ -137,7 +137,7 @@ function SecondSection() {
                   <motion.div
                     animate={{
                       x: isActive ? 10 : 0,
-                      color: isActive ? "#ffffff" : "rgba(255,255,255,0.3)",
+                      color: isActive ? "#ffffff" : "rgba(255,255,255,0.25)",
                     }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
                     className="flex items-start gap-2 group-hover:text-white/60 cursor-pointer"

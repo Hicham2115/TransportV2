@@ -9,7 +9,7 @@ export default function Footer() {
     { name: "Our Fleet", href: "/Fleet" },
   ]
   return (
-    <footer className="relative overflow-hidden bg-[#18181a] px-6 pt-14 md:px-14">
+    <footer className="relative overflow-hidden bg-black px-6 pt-14 backdrop-blur-sm md:px-14">
       {/* Decorative slanted lines — matches your hero panel aesthetic */}
       <svg
         className="pointer-events-none absolute top-0 right-0 z-0 h-full w-[80%] md:w-[55%]"
@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="flex flex-col justify-between gap-8">
             <div>
               <div className="flex items-center gap-2.5">
-                <div className="flex h-9 w-9 items-center justify-center rounded-[6px] bg-[#2557ff]">
+                <div className="flex h-9 w-9 items-center justify-center rounded-[6px] bg-brand-red">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path
                       d="M4 16L10 4L16 16"
@@ -72,9 +72,9 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full min-w-0 flex-1 rounded-l-[6px] border border-white/10 bg-white/5 px-3.5 py-2.5 text-sm text-white outline-none placeholder:text-zinc-500 focus:border-[#3D69FF]"
+                  className="w-full min-w-0 flex-1 rounded-l-[6px] border border-white/10 bg-white/5 px-3.5 py-2.5 text-sm text-white outline-none placeholder:text-zinc-500 focus:border-brand-red"
                 />
-                <button className="shrink-0 cursor-pointer rounded-r-[6px] bg-[#2557ff] px-4 text-sm font-medium text-white transition-colors hover:bg-[#2b4bcc]">
+                <button className="shrink-0 cursor-pointer rounded-r-[6px] bg-brand-red px-4 text-sm font-medium text-white transition-colors hover:bg-brand-red-dark">
                   Subscribe
                 </button>
               </div>
@@ -84,28 +84,29 @@ export default function Footer() {
           {/* Right — nav + contact */}
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-12">
             <div>
-              <p className="mb-3.5 text-[10px] font-semibold tracking-[0.14em] text-zinc-500 uppercase">
+              <p className="mb-3.5 text-[10px] font-semibold tracking-[0.14em] text-white uppercase">
                 Navigation
               </p>
               <nav className="flex flex-col gap-2.5">
-                {navLinks.map(
-                  (link) => (
-                    <Link
-                      key={link.name}
-                      href={link.href}
-                      className="text-sm text-zinc-400 transition-colors hover:text-[#3D69FF]"
-                    >
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className="group relative inline-block text-sm text-zinc-400 transition-colors hover:text-brand-red"
+                  >
+                    <span className="inline-block transition-transform duration-300 group-hover:translate-x-3">
                       {link.name}
-                    </Link>
-                  )
-                )}
+                    </span>
+                    <span className="pointer-events-none absolute right-0 -bottom-0.5 left-0 h-0.5 w-[20%] origin-left scale-x-0 rounded bg-current opacity-0 transition-transform duration-300 group-hover:scale-x-100 group-hover:opacity-100"></span>
+                  </Link>
+                ))}
               </nav>
             </div>
 
             <div>
               <div className="flex flex-col gap-5">
                 <div>
-                  <p className="text-[10px] font-semibold tracking-[0.12em] text-zinc-500 uppercase">
+                  <p className="text-[10px] font-semibold tracking-[0.12em] text-white uppercase">
                     Address
                   </p>
                   <p className="mt-1 text-sm leading-relaxed font-medium text-zinc-200">
@@ -120,7 +121,7 @@ export default function Footer() {
                   </p>
                   <a
                     href="mailto:hello@nextway.ma"
-                    className="mt-1 block text-sm font-medium text-zinc-200 hover:text-[#3D69FF]"
+                    className="mt-1 block text-sm font-medium text-zinc-200 hover:text-brand-red"
                   >
                     hello@nextway.ma
                   </a>
@@ -129,7 +130,7 @@ export default function Footer() {
                   <p className="text-[10px] font-semibold tracking-[0.12em] text-zinc-500 uppercase">
                     Phone
                   </p>
-                  <p className="mt-1 text-sm font-medium text-zinc-200">
+                  <p className="mt-1 text-sm font-medium text-zinc-200 hover:text-brand-red">
                     +212 600 000 000
                   </p>
                 </div>
@@ -141,7 +142,7 @@ export default function Footer() {
                     {/* LinkedIn */}
                     <a
                       href="#"
-                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
+                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-brand-red hover:bg-white/10"
                     >
                       <svg
                         width="14"
@@ -178,7 +179,7 @@ export default function Footer() {
                     {/* X/Twitter */}
                     <a
                       href="#"
-                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
+                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-brand-red hover:bg-white/10"
                     >
                       <svg
                         width="14"
@@ -197,7 +198,7 @@ export default function Footer() {
                     {/* Instagram */}
                     <a
                       href="#"
-                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-[#3D69FF] hover:bg-white/10"
+                      className="flex h-8 w-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors hover:border-brand-red hover:bg-white/10"
                     >
                       <svg
                         width="14"
@@ -233,8 +234,17 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-4 py-6 text-center sm:flex-row sm:text-left">
-          <p className="text-xs text-zinc-500">
-            ©{new Date().getFullYear()} LOGO NAME. All rights reserved.
+          <p className="text-center text-sm text-white md:text-left">
+            &copy; {new Date().getFullYear()} – Designed & developed by{" "}
+            <a
+              className="underline"
+              href="https://www.stallionadvertising.ma/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Stallion Advertising
+            </a>
+            .
           </p>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
             {["Privacy policy", "Terms of use", "Cookie settings"].map(
@@ -242,7 +252,7 @@ export default function Footer() {
                 <Link
                   key={link}
                   href="#"
-                  className="text-xs text-zinc-500 transition-colors hover:text-[#3D69FF]"
+                  className="text-xs text-zinc-500 transition-colors hover:text-brand-red"
                 >
                   {link}
                 </Link>

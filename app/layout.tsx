@@ -1,5 +1,4 @@
-"use client"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import React from "react"
@@ -28,6 +27,12 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-cormorant",
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,15 +46,16 @@ export default function RootLayout({
         "antialiased",
         fontMono.variable,
         "font-sans",
-        geist.variable
+        geist.variable,
+        cormorant.variable
       )}
     >
-      <body className="text-white">
-        <div className="fixed inset-0 -z-10">
-          <Grainient
-            color1="#3B82F6"
-            color2="#7291c1"
-            color3="#2e64bd"
+      <body>
+        <div className="bg-red-20/40 fixed inset-0 -z-1">
+          {/* <Grainient
+            color1="#ffffff"
+            color2="#e6697e"
+            color3="#ffffff"
             timeSpeed={0.25}
             colorBalance={0}
             warpStrength={1}
@@ -60,7 +66,7 @@ export default function RootLayout({
             blendSoftness={0.05}
             rotationAmount={500}
             noiseScale={2}
-            grainAmount={0.12}
+            grainAmount={0.31}
             grainScale={2}
             grainAnimated={false}
             contrast={1.5}
@@ -69,7 +75,7 @@ export default function RootLayout({
             centerX={0}
             centerY={0}
             zoom={0.9}
-          />
+          /> */}
         </div>
 
         {/* Content */}

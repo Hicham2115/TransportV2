@@ -14,6 +14,8 @@ import img5 from "@/app/assets/sahara.jpg"
 import img6 from "@/app/assets/amanar.jpg"
 import img7 from "@/app/assets/buggy.jpg"
 import img8 from "@/app/assets/ballon.jpg"
+import img11 from "../../app/assets/jose-de-queiroz-omHANMySs_8-unsplash.jpg"
+import { ArrowRightToLine } from "lucide-react"
 
 const SERVICES_DATA = [
   // {
@@ -150,14 +152,23 @@ export default function Excursions() {
   const [activeArticle, setActiveArticle] = useState(0)
 
   return (
-    <div className="relative z-10 min-h-screen overflow-hidden bg-transparent px-6 pt-32 pb-24 md:px-14">
-      <div className="mx-auto max-w-7xl">
-        {/* HEADER */}
-        <div className="text-center">
+    <div className="relative z-10 min-h-screen overflow-hidden bg-transparent pb-24">
+      <div
+        className="relative flex min-h-140 flex-col items-center justify-center overflow-hidden font-sans"
+        style={{
+          backgroundImage: `url(${img11.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+
+        <div className="relative z-10 max-w-full px-8 py-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-center justify-center gap-3 text-sm tracking-widest text-white/60 uppercase"
+            transition={{ duration: 0.6 }}
+            className="-mt-20 mb-10 flex flex-wrap items-center justify-center gap-2 px-2 text-center sm:gap-3"
           >
             <div className="glow-bar hidden sm:block" />
             <div className="glow-dot xs:block hidden" />
@@ -165,54 +176,61 @@ export default function Excursions() {
             <span className="glow-label text-xs tracking-wide sm:text-sm md:text-base">
               Discover Morocco
             </span>
-            <div className="glow-bar hidden sm:block" />
-            <div className="glow-dot xs:block hidden" />
-          </motion.div>
 
+            <div className="glow-dot xs:block hidden" />
+            <div className="glow-bar hidden sm:block" />
+          </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="mx-auto mb-6 max-w-full font-serif text-3xl leading-tight font-light text-white drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
           >
             Our Excursions
           </motion.h1>
 
-          <div className="mx-auto mt-6 max-w-3xl text-white/70">
-            <TextType
-              text={[
-                "Transport Ouhaddou offers premium tours, transfers, and VIP logistics across Morocco.",
-              ]}
-              typingSpeed={60}
-              pauseDuration={1500}
-              className="mx-auto mb-10 max-w-full font-serif text-[clamp(1rem,2.2vw,1.22rem)] leading-relaxed font-light text-white italic"
-              showCursor
-              cursorCharacter="_"
-              loop={false}
-              deletingSpeed={40}
-            />
-          </div>
-        </div>
+          <motion.div
+            initial={{ opacity: 0, scaleX: 0 }}
+            animate={{ opacity: 1, scaleX: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mx-auto mb-5 h-[2px] w-16 bg-gradient-to-r from-transparent via-white/70 to-transparent"
+          />
 
+          <TextType
+            text={[
+              "Transport Ouhaddou offers premium tours, transfers, and VIP logistics across Morocco.",
+            ]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor
+            cursorCharacter="_"
+            loop={false}
+            deletingSpeed={50}
+            cursorBlinkDuration={0.5}
+            className="mx-auto w-200 max-w-full font-serif text-[clamp(1rem,2.2vw,1.22rem)] leading-relaxed font-light text-white italic"
+          />
+        </div>
+      </div>
+      <div className="px-12">
         {/* ARTICLES */}
         <div className="mt-28 grid gap-10 lg:grid-cols-[1fr_1.5fr_1fr]">
           {/* LEFT */}
           <div className="flex flex-col justify-between">
             <div>
-              <p className="mb-2 text-xs font-semibold tracking-[0.3em] text-white uppercase">
+              <p className="mb-2 text-xs font-semibold tracking-[0.3em] text-black uppercase">
                 Articles
               </p>
-              <h2 className="mb-2 text-4xl leading-tight font-bold text-white sm:text-5xl">
-                Latest <span className="text-blue-400">Articles</span>
+              <h2 className="mb-2 text-4xl leading-tight font-bold text-black sm:text-5xl">
+                Latest <span className="text-brand-red">Articles</span>
               </h2>
             </div>
-            <p className="mt-6 max-w-xs text-base text-white/90">
+            <p className="mt-6 text-base text-brand-gold italic">
               Insights into modern transport across Morocco.
             </p>
           </div>
 
           {/* MAIN IMAGE */}
-          <div className="relative overflow-hidden rounded-3xl border border-blue-500/30 bg-gradient-to-br from-blue-900/30 to-blue-400/10 shadow-xl">
+          <div className="border-black-500/30 to-red/10 relative overflow-hidden rounded-3xl border bg-gradient-to-br from-red-900/30 shadow-xl">
             <motion.img
               key={ARTICLES_DATA[activeArticle].img}
               src={ARTICLES_DATA[activeArticle].img}
@@ -221,10 +239,10 @@ export default function Excursions() {
               animate={{ opacity: 1, scale: 1.01 }}
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-red-900/80 via-transparent to-transparent" />
 
             <div className="absolute right-0 bottom-0 left-0 p-7 text-white">
-              <p className="mt-2 text-base leading-relaxed font-medium text-white/90 drop-shadow">
+              <p className="mt-2 text-base leading-relaxed font-medium drop-shadow">
                 {ARTICLES_DATA[activeArticle].desc}
               </p>
             </div>
@@ -244,13 +262,13 @@ export default function Excursions() {
                   <p
                     className={`text-lg font-semibold transition-colors duration-300 ${
                       index === activeArticle
-                        ? "text-white"
-                        : "text-white/60 group-hover:text-blue-300"
+                        ? "text-black"
+                        : "text-black/60 group-hover:text-blue-300"
                     }`}
                   >
                     {item.title}
                   </p>
-                  <p className="mt-1 text-xs text-white/40 transition-colors duration-200 group-hover:text-blue-200">
+                  <p className="mt-1 text-xs text-black/40 transition-colors duration-200 group-hover:text-blue-200">
                     {item.date}
                   </p>
                 </div>
@@ -265,17 +283,17 @@ export default function Excursions() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-white drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
+            className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-brand-red drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
           >
             Our Excursions
           </motion.h1>
           {SERVICES_DATA.map((section) => (
             <div key={section.category}>
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold text-white">
+                <h3 className="text-2xl font-semibold text-black">
                   {section.category}
                 </h3>
-                <p className="mt-1 text-sm text-white/90">
+                <p className="mt-1 text-sm text-black/90">
                   {section.description}
                 </p>
               </div>
@@ -285,7 +303,7 @@ export default function Excursions() {
                   <motion.div
                     key={item.title}
                     whileHover={{ y: -8 }}
-                    className="w-full items-start overflow-hidden rounded-2xl border border-white/10 bg-[#18181a4b] md:w-[48%] md:items-center lg:w-[30%]"
+                    className="w-full items-start overflow-hidden rounded-2xl border border-brand-red bg-[#f3abab13] md:w-[48%] md:items-center lg:w-[30%]"
                   >
                     <div className="aspect-video overflow-hidden">
                       <img
@@ -295,8 +313,8 @@ export default function Excursions() {
                     </div>
 
                     <div className="p-5">
-                      <h4 className="font-semibold text-white">{item.title}</h4>
-                      <p className="mt-2 text-sm text-white/90">{item.desc}</p>
+                      <h4 className="font-semibold text-black">{item.title}</h4>
+                      <p className="mt-2 text-sm text-black/90">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -310,19 +328,19 @@ export default function Excursions() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="mx-auto mt-20 mb-6 max-w-full font-serif text-xl leading-tight font-light text-white drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
+            className="mx-auto mt-20 mb-6 max-w-full font-serif text-xl leading-tight font-light text-black drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
           >
             Circuits à Travers le Maroc
           </motion.h1>
 
-          <div className="mx-auto mt-6 max-w-3xl text-white/70">
+          <div className="mx-auto mt-6 max-w-3xl text-black/70">
             <TextType
               text={[
                 "Unforgettable adventures that immerse you in breathtaking landscapes, rich culture, and once-in-a-lifetime experiences.",
               ]}
               typingSpeed={60}
               pauseDuration={1500}
-              className="mx-auto mb-10 max-w-full font-serif text-[clamp(1rem,2.2vw,1.22rem)] leading-relaxed font-light text-white italic"
+              className="mx-auto mb-10 max-w-full font-serif text-[clamp(1rem,2.2vw,1.22rem)] leading-relaxed font-light text-black italic"
               showCursor
               cursorCharacter="_"
               loop={false}
@@ -340,7 +358,7 @@ export default function Excursions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="text-2xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-5xl"
+              className="text-2xl font-semibold text-brand-gold sm:text-3xl md:text-4xl lg:text-5xl"
             >
               Les Grandes Villes
             </motion.h3>
@@ -350,7 +368,7 @@ export default function Excursions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-4 text-sm text-white/90 sm:text-base md:max-w-lg"
+              className="mt-4 text-sm text-black/90 sm:text-base md:max-w-lg"
             >
               Our tour takes you to Morocco's iconic cities, each with its own
               unique atmosphere and heritage. In Marrakech, explore the vibrant
@@ -396,7 +414,7 @@ export default function Excursions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="text-2xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-5xl"
+              className="text-2xl font-semibold text-brand-gold sm:text-3xl md:text-4xl lg:text-5xl"
             >
               Le Sahara
             </motion.h3>
@@ -406,7 +424,7 @@ export default function Excursions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-4 text-sm text-white/90 sm:text-base md:max-w-lg"
+              className="mt-4 text-sm text-black/90 sm:text-base md:max-w-lg"
             >
               Our Sahara tours immerse you in the heart of the Moroccan desert.
               In Merzouga, discover the majestic dunes of Erg Chebbi, take a
@@ -434,7 +452,7 @@ export default function Excursions() {
             />
 
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 transition group-hover:opacity-100">
-              <h3 className="text-sm font-bold text-white">
+              <h3 className="text-sm font-bold text-black">
                 Desert Experience
               </h3>
             </div>
@@ -447,7 +465,7 @@ export default function Excursions() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-white drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
+            className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-brand-red drop-shadow-[0_2px_40px_rgba(10,30,80,0.18)] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
           >
             Activités d'Aventure et de Loisirs
           </motion.h1>
@@ -455,10 +473,10 @@ export default function Excursions() {
           {SERVICES_DATA2.map((section) => (
             <div key={section.category}>
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold text-white">
+                <h3 className="text-2xl font-semibold text-black">
                   {section.category}
                 </h3>
-                <p className="mt-1 text-sm text-white/90">
+                <p className="mt-1 text-sm text-black/90">
                   {section.description}
                 </p>
               </div>
@@ -468,7 +486,7 @@ export default function Excursions() {
                   <motion.div
                     key={item.title}
                     whileHover={{ y: -8 }}
-                    className="w-full items-start overflow-hidden rounded-2xl border border-white/10 bg-[#18181a4b] md:w-[48%] md:items-center lg:w-[30%]"
+                    className="w-full items-start overflow-hidden rounded-2xl border border-brand-red bg-[#f3abab13] md:w-[48%] md:items-center lg:w-[30%]"
                   >
                     <div className="aspect-video overflow-hidden">
                       <img
@@ -478,8 +496,8 @@ export default function Excursions() {
                     </div>
 
                     <div className="p-5">
-                      <h4 className="font-semibold text-white">{item.title}</h4>
-                      <p className="mt-2 text-sm text-white/90">{item.desc}</p>
+                      <h4 className="font-semibold text-black">{item.title}</h4>
+                      <p className="mt-2 text-sm text-black/90">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}

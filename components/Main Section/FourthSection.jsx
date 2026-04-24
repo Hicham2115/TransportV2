@@ -23,14 +23,14 @@ function FourthSection() {
   }
 
   return (
-    <section className="relative z-0 mb-20 flex min-h-[80vh] w-full flex-col items-center justify-center overflow-hidden bg-[#18181a] px-4 py-24">
+    <section className="overflow-hiddenpx-4 relative z-0 mb-20 flex min-h-[80vh] w-full flex-col items-center justify-center bg-black py-24 backdrop-blur-sm">
       {/* Radial glow behind panels */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="pointer-events-none absolute top-16 left-1/2 z-0 h-[340px] w-[600px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(61,105,255,0.18)_0%,transparent_70%)]"
+        className="pointer-events-none absolute top-16 left-1/2 z-0 h-[340px] w-[600px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(224,16,32,0.15)_0%,transparent_70%)]"
       />
 
       {/* Slanted panel image */}
@@ -88,8 +88,8 @@ function FourthSection() {
           />
         </svg>
 
-        <div className="absolute top-0 left-0 z-10 h-[160px] w-full bg-gradient-to-b from-[#18181a] to-transparent" />
-        <div className="absolute bottom-0 left-0 z-10 h-[220px] w-full bg-gradient-to-t from-[#18181a] to-transparent" />
+        <div className="absolute top-0 left-0 z-10 h-[160px] w-full bg-gradient-to-b from-black/70 to-transparent" />
+        <div className="absolute bottom-0 left-0 z-10 h-[220px] w-full bg-gradient-to-t from-black/70 to-transparent" />
       </motion.div>
 
       {/* Content */}
@@ -125,20 +125,20 @@ function FourthSection() {
           variants={itemVariants}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="group relative inline-flex w-full  items-center justify-center overflow-hidden rounded-lg px-6 py-3 text-white uppercase transition-all duration-300 ease-in-out focus:outline focus:outline-2 focus:outline-offset-4 focus:outline-white sm:w-auto sm:px-8 sm:py-4 cursor-pointer"
+          className="group relative inline-flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg px-6 py-3 text-white uppercase transition-all duration-300 ease-in-out focus:outline focus:outline-2 focus:outline-offset-4 focus:outline-white sm:w-auto sm:px-8 sm:py-4"
         >
-          <span className="relative z-20  text-sm font-semibold sm:text-base">
+          <span className="relative z-20 text-sm font-semibold sm:text-base">
             Get in Touch
           </span>
 
           {/* shine effect */}
-          <span className="absolute top-0 left-[-80%] z-10 h-full w-[50%] rotate-12 bg-white/20 blur-lg transition-all duration-1000 group-hover:left-[130%] cursor-pointer" />
+          <span className="absolute top-0 left-[-80%] z-10 h-full w-[50%] rotate-12 cursor-pointer bg-white/20 blur-lg transition-all duration-1000 group-hover:left-[130%]" />
 
           {/* borders */}
-          <span className="absolute top-0 left-0 h-[20%] w-1/2  border-t-2 border-l-2 border-[#D4EDF9]" />
-          <span className="absolute top-0 right-0 h-[60%] w-1/2  border-t-2 border-r-2 border-[#D4EDF9] transition-all duration-300 group-hover:h-[90%] cursor-pointer" />
-          <span className="absolute bottom-0 left-0 h-[60%] w-1/2  border-b-2 border-l-2 border-[#D4EDF9] transition-all duration-300 group-hover:h-[90%] cursor-pointer" />
-          <span className="absolute right-0 bottom-0 h-[20%] w-1/2  border-r-2 border-b-2 border-[#D4EDF9]" />
+          <span className="absolute top-0 left-0 h-[20%] w-1/2 border-t-2 border-l-2 border-white/40" />
+          <span className="absolute top-0 right-0 h-[60%] w-1/2 cursor-pointer border-t-2 border-r-2 border-white/40 transition-all duration-300 group-hover:h-[90%]" />
+          <span className="absolute bottom-0 left-0 h-[60%] w-1/2 cursor-pointer border-b-2 border-l-2 border-white/40 transition-all duration-300 group-hover:h-[90%]" />
+          <span className="absolute right-0 bottom-0 h-[20%] w-1/2 border-r-2 border-b-2 border-white/40" />
         </motion.button>
       </motion.div>
     </section>

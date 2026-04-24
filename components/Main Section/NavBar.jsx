@@ -25,7 +25,7 @@ const navigationLinks = [
 
 export default function Component() {
   return (
-    <header className="sticky top-0 z-50 px-4 text-black backdrop-blur-lg md:px-6">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-[#0A0A0D]/80 px-4 text-white backdrop-blur-xl md:px-6">
       <div className="flex h-16 items-center justify-between gap-4">
         {/* Left side  */}
         <div className="flex flex-1 items-center gap-2">
@@ -81,9 +81,9 @@ export default function Component() {
                   <div className="mt-2 flex flex-col-reverse gap-2">
                     <Link href="/contact-us">
                       <button className="relative inline-flex h-8 overflow-hidden rounded-md p-[1px] whitespace-nowrap transition focus:outline-none active:scale-95 cursor-pointer">
-                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
+                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E01020_0%,#FF6B35_50%,#C4922A_100%)]"></span>
 
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-1 rounded-md bg-slate-950 px-3 text-xs font-medium text-white backdrop-blur-3xl">
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-1 rounded-md bg-[#0A0A0D] px-3 text-xs font-medium text-white backdrop-blur-3xl">
                           Contactez-nous
                           <svg
                             stroke="currentColor"
@@ -108,7 +108,7 @@ export default function Component() {
           <a className="text-primary hover:text-primary/90" href="#">
             <div className="flex gap-2">
               {/* <Image src={Logo} alt="logo" priority className="h-20 w-auto" /> */}
-              <span className="text-xl font-bold tracking-wider text-black">
+              <span className="text-xl font-bold tracking-wider text-white">
                 LOGO NAME
               </span>
             </div>
@@ -123,8 +123,8 @@ export default function Component() {
                     active={link.active}
                     className={`cursor-pointer rounded-md px-3 py-1.5 font-medium transition-all hover:bg-transparent hover:underline ${
                       link.active
-                        ? "bg-[#5226ff] text-white shadow-[0_0_20px_rgba(186,252,12,0.6)]"
-                        : "hover:text-[#5226ff]"
+                        ? "bg-brand-red text-white shadow-[0_0_20px_rgba(224,16,32,0.5)]"
+                        : "hover:text-brand-red"
                     }`}
                     href={link.href}
                   >
@@ -143,8 +143,8 @@ export default function Component() {
               </Button> */}
               <Link href="/contact-us">
                 <button className="relative inline-flex h-10 cursor-pointer overflow-hidden rounded-lg p-[1px] transition focus:outline-none active:scale-95">
-                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
-                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-slate-950 px-5 text-sm font-medium text-white backdrop-blur-3xl">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E01020_0%,#FF6B35_50%,#C4922A_100%)]"></span>
+                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#0A0A0D] px-5 text-sm font-medium text-white backdrop-blur-3xl">
                     Contactez-nous
                     <svg
                       stroke="currentColor"

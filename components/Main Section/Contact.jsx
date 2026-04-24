@@ -59,7 +59,7 @@ function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="flex-1 bg-[#18181a4b] p-6 shadow-sm backdrop-blur-xl md:p-14 lg:p-16"
+          className="flex-1 bg-white/5 p-6 shadow-sm backdrop-blur-xl md:p-14 lg:p-16"
           style={{
             clipPath:
               "polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px)",
@@ -80,13 +80,13 @@ function Contact() {
             </motion.h2>
             <motion.span
               variants={itemVariants}
-              className="text-3xl font-light text-gray-400 md:text-4xl"
+              className="text-3xl font-light text-brand-gold md:text-4xl"
             >
               /
             </motion.span>
             <motion.span
               variants={itemVariants}
-              className="text-xl font-semibold text-white/90 md:text-xl"
+              className="text-xl font-semibold text-brand-gold md:text-xl"
             >
               Talk to us
             </motion.span>
@@ -110,7 +110,7 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="Your name"
-                    className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-[#3D69FF] focus:outline-none"
+                    className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-brand-red focus:outline-none"
                   />
                 </motion.div>
                 <motion.div
@@ -121,7 +121,7 @@ function Contact() {
                   <input
                     type="email"
                     placeholder="votre@email.com"
-                    className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-[#3D69FF] focus:outline-none"
+                    className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-brand-red focus:outline-none"
                   />
                 </motion.div>
               </div>
@@ -136,7 +136,7 @@ function Contact() {
                   <input
                     type="tel"
                     placeholder="+212 6XX XXX XXX"
-                    className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-[#3D69FF] focus:outline-none"
+                    className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-brand-red focus:outline-none"
                   />
                 </motion.div>
                 <motion.div
@@ -147,7 +147,7 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="Subject of your message"
-                    className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-[#3D69FF] focus:outline-none"
+                    className="w-full border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-brand-red focus:outline-none"
                   />
                 </motion.div>
               </div>
@@ -161,7 +161,7 @@ function Contact() {
                 <textarea
                   placeholder="Write your message here..."
                   rows={5}
-                  className="w-full resize-none border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-[#3D69FF] focus:outline-none"
+                  className="w-full resize-none border border-gray-200 bg-white px-4 py-3.5 text-sm text-black placeholder:text-gray-400 focus:border-brand-red focus:outline-none"
                 />
               </motion.div>
             </div>
@@ -171,7 +171,7 @@ function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="group relative inline-flex cursor-pointer items-center justify-center overflow-hidden bg-[#3D69FF] px-8 py-3.5 font-medium text-white shadow-[0_0_30px_rgba(61,105,255,0.3)] transition-all duration-300 ease-out hover:bg-[#2557ff] hover:shadow-[0_0_50px_rgba(61,105,255,0.5)]"
+                className="group relative inline-flex cursor-pointer items-center justify-center overflow-hidden bg-brand-red px-8 py-3.5 font-medium text-white shadow-[0_0_30px_rgba(224,16,32,0.3)] transition-all duration-300 ease-out hover:bg-brand-red-dark hover:shadow-[0_0_50px_rgba(224,16,32,0.5)]"
               >
                 {/* Shine sweep effect */}
                 <span className="absolute inset-0 flex h-full w-full [transform:skew(-13deg)_translateX(-150%)] cursor-pointer justify-center group-hover:[transform:skew(-13deg)_translateX(150%)] group-hover:duration-1000">

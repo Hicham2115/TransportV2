@@ -17,7 +17,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react"
 
 function FirstSection() {
   return (
-    <div className="relative mb-20 flex flex-col items-center px-6 font-serif md:px-20">
+    <div className="relative mt-20 mb-20 flex flex-col items-center px-6 font-serif md:px-20">
       <div className="flex w-full flex-col gap-10 md:flex-row md:items-start md:justify-between">
         {/* LEFT SIDE */}
         <motion.div
@@ -29,18 +29,11 @@ function FirstSection() {
         >
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4">
-              <div className="h-14 w-[2px] rounded-full bg-white" />
-              <h2 className="text-3xl font-bold tracking-wide text-white">
+              <div className="h-14 w-[2px] rounded-full bg-brand-red" />
+              <h2 className="text-3xl font-bold tracking-wide text-black">
                 About Us
               </h2>
             </div>
-            {/* <div className="aspect-square w-40 md:ml-20 md:w-60 lg:w-72">
-              <DotLottieReact
-                src="https://lottie.host/e0d3531c-4542-4bd8-b091-a7c96c0559bc/vzBBiRTBKX.lottie"
-                loop
-                autoplay
-              />
-            </div> */}
           </div>
         </motion.div>
         {/* RIGHT SIDE */}
@@ -50,7 +43,7 @@ function FirstSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-2xl leading-snug font-semibold text-white md:text-3xl"
+            className="text-2xl leading-snug font-semibold text-black md:text-3xl"
           >
             At Next Way Transport, we move Morocco with safe, comfortable, and
             reliable journeys that connect people and places across the country.
@@ -61,7 +54,7 @@ function FirstSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-lg leading-relaxed text-white italic"
+            className="text-lg leading-relaxed text-black/70 italic"
           >
             With strong experience in passenger transport, we provide
             comfortable and efficient bus travel solutions across cities and
@@ -97,7 +90,7 @@ function FirstSection() {
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>
-            <p className="mt-0.5 text-[12px] text-white">
+            <p className="mt-0.5 text-[12px] text-white/80">
               Luxury fleet, flexible booking
             </p>
           </div>
@@ -126,7 +119,7 @@ function FirstSection() {
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>
-            <p className="mt-0.5 text-[12px] text-white">
+            <p className="mt-0.5 text-[12px] text-white/80">
               Luxury fleet, flexible booking
             </p>
           </div>
@@ -155,7 +148,7 @@ function FirstSection() {
             <h3 className="text-[15px] leading-snug font-bold text-white">
               Premium Car Rentals
             </h3>
-            <p className="mt-0.5 text-[12px] text-white">
+            <p className="mt-0.5 text-[12px] text-white/80">
               Luxury fleet, flexible booking
             </p>
           </div>
@@ -169,20 +162,20 @@ function FirstSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="rounded-xl border border-white/30 p-4 sm:p-6"
+          className="rounded-xl border border-brand-red/40 bg-white/8 p-4 backdrop-blur-sm transition-all duration-300 sm:p-6"
         >
           <div className="relative flex h-12 w-12 items-center justify-center">
-            <div className="absolute inset-0 rounded-full border border-white/30" />
-            <div className="absolute inset-[6px] rounded-full border border-white/15" />
-            <ShieldCheck className="relative z-10 h-7 w-7 text-white/95" />
+            <div className="absolute inset-0 rounded-full border border-brand-red/40" />
+            <div className="absolute inset-[6px] rounded-full border border-brand-red/20" />
+            <ShieldCheck className="relative z-10 h-6 w-6 text-brand-red" />
           </div>
 
           <div className="mt-4 flex flex-col gap-3">
-            <span className="text-base font-bold sm:text-lg">
+            <span className="text-base font-bold text-black sm:text-lg">
               Trusted by Thousands of Drivers
             </span>
 
-            <span className="text-sm text-white/80 sm:text-base">
+            <span className="text-sm text-black/60 sm:text-base">
               We provide reliable car rental and transport services trusted by
               individuals and businesses every day.
             </span>
@@ -195,20 +188,20 @@ function FirstSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="rounded-xl border border-white/30 p-4 sm:p-6"
+          className="rounded-xl border border-brand-red/40 bg-white/8 p-4 backdrop-blur-sm transition-all duration-300 sm:p-6"
         >
           <div className="relative flex h-12 w-12 items-center justify-center">
-            <div className="absolute inset-0 rounded-full border border-white/30" />
-            <div className="absolute inset-[6px] rounded-full border border-white/15" />
-            <CalendarCheck2 className="relative z-10 h-7 w-7 text-white/95" />
+            <div className="absolute inset-0 rounded-full border border-brand-red/40" />
+            <div className="absolute inset-[6px] rounded-full border border-brand-red/20" />
+            <CalendarCheck2 className="relative z-10 h-6 w-6 text-brand-red" />
           </div>
 
           <div className="mt-4 flex flex-col gap-3">
-            <span className="text-base font-bold sm:text-lg">
+            <span className="text-base font-bold text-black sm:text-lg">
               Smooth Booking & Hassle-Free Pickup
             </span>
 
-            <span className="text-sm text-white/80 sm:text-base">
+            <span className="text-sm text-black/60 sm:text-base">
               Enjoy fast reservations, easy documentation, and seamless vehicle
               pickup wherever you need it.
             </span>
@@ -221,20 +214,20 @@ function FirstSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="rounded-xl border border-white/30 p-4 sm:p-6"
+          className="rounded-xl border border-brand-red/40 bg-white/8 p-4 backdrop-blur-sm transition-all duration-300 sm:p-6"
         >
           <div className="relative flex h-12 w-12 items-center justify-center">
-            <div className="absolute inset-0 rounded-full border border-white/30" />
-            <div className="absolute inset-[6px] rounded-full border border-white/15" />
-            <MapPinCheckInside className="relative z-10 h-7 w-7 text-white/95" />
+            <div className="absolute inset-0 rounded-full border border-brand-red/40" />
+            <div className="absolute inset-[6px] rounded-full border border-brand-red/20" />
+            <MapPinCheckInside className="relative z-10 h-6 w-6 text-brand-red" />
           </div>
 
           <div className="mt-4 flex flex-col gap-3">
-            <span className="text-base font-bold sm:text-lg">
+            <span className="text-base font-bold text-black sm:text-lg">
               Smart Mobility Platform
             </span>
 
-            <span className="text-sm text-white/80 sm:text-base">
+            <span className="text-sm text-black/60 sm:text-base">
               Track, manage, and book your rides in real time with our simple
               and efficient digital system.
             </span>
