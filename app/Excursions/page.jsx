@@ -214,60 +214,65 @@ export default function Excursions() {
       <div className="px-12">
         {/* ARTICLES */}
         <motion.div
-          className="mt-37 space-y-14"
+          className="mt-12 space-y-10 md:mt-20 md:space-y-14 lg:mt-28"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <div className="mt-28 grid gap-10 lg:grid-cols-[1fr_1.5fr_1fr]">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1.5fr_1fr] lg:gap-10">
             {/* LEFT */}
-            <div className="flex flex-col justify-between">
+            <div className="order-1 flex flex-col justify-between lg:order-1">
               <div className="drop-shadow-md">
                 <p className="mb-2 text-xs font-semibold tracking-[0.3em] text-black uppercase">
                   Articles
                 </p>
-                <h2 className="mb-2 text-4xl leading-tight font-bold text-black sm:text-5xl">
+                <h2 className="mb-2 text-3xl leading-tight font-bold text-black sm:text-4xl lg:text-5xl">
                   Latest <span className="text-brand-red">Articles</span>
                 </h2>
               </div>
-              <p className="mt-6 font-semibold text-brand-gold italic drop-shadow-sm">
+
+              <p className="mt-4 text-sm font-semibold text-brand-gold italic drop-shadow-sm sm:text-base lg:mt-6">
                 Insights into modern transport across Morocco.
               </p>
             </div>
 
             {/* MAIN IMAGE */}
-            <div className="border-black-500/30 to-red/10 relative overflow-hidden rounded-3xl border bg-gradient-to-br from-red-900/30 shadow-xl">
+            <div className="border-black-500/30 to-red/10 relative order-2 overflow-hidden rounded-2xl border bg-gradient-to-br from-red-900/30 shadow-xl sm:rounded-3xl">
               <motion.img
                 key={ARTICLES_DATA[activeArticle].img}
                 src={ARTICLES_DATA[activeArticle].img}
-                className="aspect-[4/3] w-full scale-105 object-cover transition-transform duration-700 hover:scale-110"
+                className="h-64 w-full scale-105 object-cover transition-transform duration-700 hover:scale-110 sm:h-80 lg:h-auto"
                 initial={{ opacity: 0, scale: 1.04 }}
                 animate={{ opacity: 1, scale: 1.01 }}
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-red-900/80 via-transparent to-transparent" />
 
-              <div className="absolute right-0 bottom-0 left-0 p-7 text-white">
-                <p className="mt-2 text-base leading-relaxed font-medium drop-shadow">
+              <div className="absolute right-0 bottom-0 left-0 p-4 text-white sm:p-6 lg:p-7">
+                <p className="text-sm leading-relaxed font-medium drop-shadow sm:text-base">
                   {ARTICLES_DATA[activeArticle].desc}
                 </p>
               </div>
             </div>
 
             {/* LIST */}
-            <div className="flex flex-col gap-6">
+            <div className="order-3 flex flex-col gap-4 sm:gap-6">
               {ARTICLES_DATA.map((item, index) => (
                 <button
                   key={item.title}
                   onMouseEnter={() => setActiveArticle(index)}
-                  className={`group text-left transition-all duration-300 ${index === activeArticle ? "scale-105" : "opacity-80"}`}
+                  className={`group text-left transition-all duration-300 ${
+                    index === activeArticle ? "scale-[1.02]" : "opacity-80"
+                  }`}
                 >
                   <div
-                    className={`flex flex-col gap-1 border-b border-white/40 pb-4 ${index === activeArticle ? "border-b-2" : ""}`}
+                    className={`flex flex-col gap-1 border-b border-white/40 pb-3 sm:pb-4 ${
+                      index === activeArticle ? "border-b-2" : ""
+                    }`}
                   >
                     <p
-                      className={`text-lg font-semibold transition-colors duration-300 ${
+                      className={`text-base font-semibold transition-colors duration-300 sm:text-lg ${
                         index === activeArticle
                           ? "text-black"
                           : "text-black/60 group-hover:text-blue-300"
@@ -275,7 +280,8 @@ export default function Excursions() {
                     >
                       {item.title}
                     </p>
-                    <p className="mt-1 text-xs text-black/40 transition-colors duration-200 group-hover:text-blue-200">
+
+                    <p className="text-xs text-black/40 group-hover:text-blue-200">
                       {item.date}
                     </p>
                   </div>
