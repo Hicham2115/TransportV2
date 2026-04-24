@@ -85,13 +85,13 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
-
-        <ScrollToTopButton />
+        <div className="hidden md:block">
+          <ScrollToTopButton />
+        </div>
 
         <AppDock />
 
         <SmoothScroll />
-
         {/* <SmoothCursor /> */}
       </body>
     </html>
