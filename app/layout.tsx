@@ -18,6 +18,7 @@ import { AppDock } from "@/components/AppDock"
 import Grainient from "@/components/Grainient"
 import Footer from "@/components/Main Section/Footer"
 import SmoothScroll from "@/components/Main Section/SmoothScroll"
+import ScrollToTopButton from "@/components/ui/ScrollToTopButton"
 // import { SmoothCursor } from "@/components/ui/smooth-cursor"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
@@ -79,10 +80,13 @@ export default function RootLayout({
         </div>
 
         {/* Content */}
+
         <main className="relative z-10 min-h-screen">
           {children}
           <Footer />
         </main>
+
+        <ScrollToTopButton />
 
         <AppDock />
 

@@ -74,19 +74,19 @@ function Contact() {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-3xl font-bold md:text-4xl"
+              className="text-3xl font-bold drop-shadow-md md:text-4xl"
             >
               Contact
             </motion.h2>
             <motion.span
               variants={itemVariants}
-              className="text-3xl font-light text-brand-gold md:text-4xl"
+              className="text-3xl font-light text-brand-gold drop-shadow-md md:text-4xl"
             >
               /
             </motion.span>
             <motion.span
               variants={itemVariants}
-              className="text-xl font-semibold text-brand-gold md:text-xl"
+              className="text-xl font-semibold text-brand-gold drop-shadow-md md:text-xl"
             >
               Talk to us
             </motion.span>
