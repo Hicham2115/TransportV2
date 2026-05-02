@@ -179,11 +179,11 @@ export default function RootLayout({
             <ScrollToTopButton />
           </div>
 
-          <AppDock />
-
           <SmoothScroll />
           {/* <SmoothCursor /> */}
         </div>
+
+        <AppDock />
       </body>
     </html>
   )
