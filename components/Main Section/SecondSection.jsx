@@ -4,53 +4,41 @@ import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import img1 from "@/app/assets/Man48.jpg"
 import img2 from "@/app/assets/sprintershow1920.jpg"
-import img3 from "@/app/assets/pradopalmerais.jpg"
-import img4 from "@/app/assets/vito_1024.webp"
 import img5 from "@/app/assets/kinglong.jpeg"
 import img6 from "@/app/assets/nvcar.jpg"
 
 const services = [
   {
     id: "01",
-    title: "Man",
+    title: "30 Places",
     description:
-      "Autocars robustes et fiables, offrant confort et espace pour les groupes de grandes tailles, parfaits pour diverses missions de transport.",
-    image: img1,
+      "Idéal pour les groupes de taille moyenne, ce car compact allie maniabilité et confort. Parfait pour les excursions de journée, transferts d'aéroport et circuits touristiques en ville comme en montagne.",
+    image:
+      "https://images.unsplash.com/photo-1495150434753-f8ceb319e9dc?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "02",
-    title: "Mercedes Sprinter ",
+    title: "40 Places",
     description:
-      "Plus de 80 autocars spacieux, parfaits pour les grands groupes, offrant confort et sécurité pour les longs trajets et excursions.",
-    image: img2,
+      "Un équilibre parfait entre capacité et flexibilité. Ses sièges ergonomiques et son espace généreux en font le choix idéal pour les sorties scolaires, séminaires d'entreprise et voyages organisés.",
+    image:
+      "https://images.unsplash.com/photo-1719316663972-0696da2b47a3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "03",
-    title: "Toyota Prado",
+    title: "50 Places",
     description:
-      "Plus de 10 minibus de luxe, offrant confort optimal avec sièges ergonomiques et technologies avancées, idéaux pour circuits touristiques et transferts.",
-    image: img3,
+      "Conçu pour les grands groupes exigeants, ce car spacieux offre une expérience de voyage premium. Climatisation performante, sièges inclinables et large rangement pour les longs trajets en toute sérénité.",
+    image:
+      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "04",
-    title: "Mercedes Vito",
+    title: "54 Places",
     description:
-      "Plus de 45 véhicules agiles et confortables, parfaits pour petits groupes et excursions locales, offrant flexibilité et une expérience agréable.",
-    image: img4,
-  },
-  {
-    id: "05",
-    title: "King Long",
-    description:
-      "Plus de 30 vans élégants pour voyages de luxe et transferts VIP, alliant style et fonctionnalités avancées.",
-    image: img5,
-  },
-  {
-    id: "06",
-    title: "Mercedes Minibus",
-    description:
-      "Plus de 100 Toyota tout-terrain performants et sécurisés, conçus pour affronter les terrains difficiles lors d'excursions en montagne ou safaris dans le désert.",
-    image: img6,
+      "Notre fleuron pour les déplacements de grande envergure. Capacité maximale avec confort optimal — idéal pour les voyages longue distance, pèlerinages et événements sportifs à travers tout le royaume.",
+    image:
+      "https://images.unsplash.com/photo-1644828816264-cd47ba424879?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ]
 
@@ -72,7 +60,7 @@ function SecondSection() {
       <div className="relative z-10 pb-20">
         <div className="flex flex-col gap-6 px-6 pt-20 md:flex-row md:items-center md:justify-between md:px-20">
           <h1 className="font-serif text-[30px] leading-tight font-light text-brand-gold drop-shadow-[0_2px_40px_rgba(196,146,42,0.25)]">
-            LOGO NAME
+            EXPLORE OUR BUSES
           </h1>
           <div className="flex items-center gap-4">
             <div className="h-10 w-[2px] rounded-full bg-brand-red md:h-14" />
@@ -132,7 +120,7 @@ function SecondSection() {
                   key={service.id}
                   onMouseEnter={() => setActiveItem(service)}
                   onClick={() => setActiveItem(service)}
-                  className="group relative  border-b border-white/10 py-6 last:border-0 cursor-pointer"
+                  className="group relative cursor-pointer border-b border-white/10 py-6 last:border-0"
                 >
                   <motion.div
                     animate={{
@@ -140,7 +128,7 @@ function SecondSection() {
                       color: isActive ? "#ffffff" : "rgba(255,255,255,0.25)",
                     }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="flex items-start gap-2 group-hover:text-white/60 cursor-pointer"
+                    className="flex cursor-pointer items-start gap-2 group-hover:text-white/60"
                   >
                     <h2 className="text-3xl font-bold tracking-tight md:text-5xl lg:text-6xl">
                       {service.title}

@@ -1,6 +1,7 @@
 import Hero from "@/components/Main Section/Hero"
 import FirstSection from "@/components/Main Section/FirstSection"
 import SecondSection from "@/components/Main Section/SecondSection"
+import FleetSection from "@/components/Main Section/FleetSection"
 import ThirdSection from "@/components/Main Section/ThirdSection"
 import FAQ from "@/components/Main Section/FAQ"
 import FourthSection from "@/components/Main Section/FourthSection"
@@ -12,6 +13,7 @@ function Page() {
       <Hero />
       <FirstSection />
       <SecondSection />
+      <FleetSection />
       <ThirdSection />
       <FAQ />
       <FourthSection />
