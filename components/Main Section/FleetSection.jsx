@@ -153,7 +153,7 @@ function FleetSection() {
       >
         <p className="glow-label mb-4 text-brand-red">Notre Flotte Complète</p>
 
-        <h2 className="mt-10 text-4xl leading-snug font-semibold text-black md:text-5xl">
+        <h2 className="mt-10 font-serif text-4xl leading-snug font-semibold text-black md:text-5xl">
           Un véhicule pour chaque
           <br />
           <span className="text-brand-gold">horizon.</span>

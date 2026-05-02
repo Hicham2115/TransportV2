@@ -4,13 +4,6 @@ import React, { useState } from "react"
 import { motion } from "motion/react"
 import TextType from "@/components/TextType"
 
-import img1 from "@/app/assets/Man52.jpg"
-import img2 from "@/app/assets/Man48.jpg"
-import img3 from "@/app/assets/nvcar.jpg"
-import img4 from "@/app/assets/sprintershow1920.jpg"
-import img5 from "@/app/assets/vito_1024.webp"
-import img6 from "@/app/assets/PACKPRADO.jpg"
-
 import img7 from "@/app/assets/EQUIPE1200.webp"
 import img8 from "@/app/assets/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg"
 import img9 from "@/app/assets/nrd-aMmDIsdnUro-unsplash.jpg"
@@ -21,39 +14,60 @@ import { ArrowRightToLine } from "lucide-react"
 
 const SERVICES_DATA = [
   {
-    category: "Harmonious Travel",
-    description:
-      "Robust and reliable coaches offering comfort and space for large groups, perfect for all types of transport missions.",
+    category: "Minibus",
+    description: "Confort et élégance pour les petits groupes",
     items: [
       {
-        title: "MAN Coaches – Large Capacity",
-        desc: "Over 80 spacious coaches with 48 seats, designed for large groups. Ideal for long-distance journeys and excursions, combining comfort and safety.",
-        img: img1.src,
+        title: "Mercedes Vito",
+        desc: "Discret, élégant et agile — idéal pour les transferts VIP et les petits groupes exigeant intimité et confort.",
+        img: "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?q=80&w=2064&auto=format&fit=crop",
       },
       {
-        title: "MAN Minibuses – Space & Comfort",
-        desc: "More than 10 luxury minibuses with 26 seats, featuring ergonomic seating and modern technology. Perfect for tours and group transfers.",
-        img: img2.src,
+        title: "Ford Transit",
+        desc: "Spacieux et modulable, le Ford Transit réunit les groupes intermédiaires dans un cadre confortable pour tout type de déplacement.",
+        img: "https://images.unsplash.com/photo-1564435147636-8ca0966b0275?q=80&w=1738&auto=format&fit=crop",
+      },
+    ],
+  },
+  {
+    category: "Mercedes Sprinter",
+    description: "Polyvalence et prestige pour chaque mission",
+    items: [
+      {
+        title: "07 Places",
+        desc: "La configuration VIP par excellence — sept passagers dans un espace privatif digne d'un premier rang.",
+        img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80&auto=format&fit=crop",
       },
       {
-        title: "Mercedes Vehicles – Flexibility & Comfort",
-        desc: "Over 45 agile vehicles with 18 seats, ideal for small groups and local excursions, offering flexibility and a smooth travel experience.",
-        img: img3.src,
+        title: "17 Places",
+        desc: "Le juste milieu entre intimité et capacité, parfait pour les excursions et les transferts de groupes.",
+        img: "https://images.unsplash.com/photo-1619221496652-7ee3d7406203?q=80&w=2062&auto=format&fit=crop",
       },
       {
-        title: "Mercedes Sprinter – Elegance & Space",
-        desc: "More than 30 elegant vans with 7 seats, perfect for luxury travel and VIP transfers, combining style with advanced features.",
-        img: img4.src,
+        title: "20 Places",
+        desc: "Convivialité maximale sans concession sur le confort — pour les séminaires, team-buildings et circuits organisés.",
+        img: "https://images.unsplash.com/photo-1509749837427-ac94a2553d0e?q=80&w=1740&auto=format&fit=crop",
+      },
+    ],
+  },
+  {
+    category: "4WD · 4×4",
+    description: "L'aventure et le luxe, sans compromis",
+    items: [
+      {
+        title: "Mitsubishi Pajero",
+        desc: "Robuste et infatigable, le Pajero dompte chaque terrain avec une assurance légendaire.",
+        img: "https://images.unsplash.com/photo-1715372028425-c733b484e80e?q=80&w=1746&auto=format&fit=crop",
       },
       {
-        title: "Toyota Land Cruiser – Off-Road Comfort",
-        desc: "Over 100 powerful 4x4 vehicles with 5 seats, built for challenging terrains such as mountains and desert safaris, ensuring safety and performance.",
-        img: img5.src,
+        title: "Toyota Land Cruiser",
+        desc: "L'icône du tout-terrain — puissance, fiabilité et prestige réunis pour vos aventures les plus ambitieuses.",
+        img: "https://images.unsplash.com/photo-1544468607-e7b3e848ff87?q=80&w=1250&auto=format&fit=crop",
       },
       {
-        title: "Prado – Adventure & Comfort",
-        desc: "Over 50 robust SUVs with 5 seats, designed for adventurous journeys and off-road excursions, combining durability with comfort.",
-        img: img6.src,
+        title: "Toyota Prado",
+        desc: "Alliant luxe et performance off-road, le Prado redéfinit l'aventure avec une élégance sans égale.",
+        img: "https://images.unsplash.com/photo-1547245324-d777c6f05e80?q=80&w=1740&auto=format&fit=crop",
       },
     ],
   },
@@ -174,7 +188,7 @@ export default function Excursions() {
                   transition={{ duration: 0.7, delay: 0.2 }}
                   className="mx-auto mt-6 max-w-full font-serif text-2xl leading-tight font-light text-brand-red drop-shadow-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl"
                 >
-                  Discover Our Luxury Vehicles
+                  {section.category}
                 </motion.h1>
                 {/* Section Description */}
                 <div className="mt-10 mb-10">
