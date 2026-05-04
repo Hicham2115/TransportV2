@@ -30,7 +30,7 @@ function Hero() {
           <div className="glow-dot xs:block hidden" />
 
           <span className="glow-label text-xs tracking-wide sm:text-sm md:text-base">
-            Next Way Transport
+            Transport
           </span>
 
           <div className="glow-dot xs:block hidden" />

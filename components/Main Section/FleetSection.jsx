@@ -5,8 +5,12 @@ import { motion } from "framer-motion"
 import img1 from "@/app/assets/Mercedes_Vito_minibus_front_202605042009.jpeg"
 import img2 from "@/app/assets/Ultra-realistic_4K_image_of_a_202605042032.jpeg"
 import img3 from "@/app/assets/Ultra-realistic_4K_studio_photo_of_202605042038.jpeg"
-import img4 from "@/app/assets/Irizar_coach_bus_white_background_202605042003.jpeg"
-import img5 from "@/app/assets/Irizar_coach_bus_white_background_202605042003.jpeg"
+import img4 from "@/app/assets/Mercedes_Sprinter_minibus_side_view_202605042152.jpeg"
+import img5 from "@/app/assets/Mercedes_Sprinter_minibus_side_view_202605042155.jpeg"
+
+import img6 from "@/app/assets/Mitsubishi_4x4_SUV_black_202605042156.jpeg"
+import img7 from "@/app/assets/Toyota_Land_Cruiser_4x4_isolated_202605042200.jpeg"
+import img8 from "@/app/assets/Toyota_Prado_4x4_SUV_202605042202.jpeg"
 
 const minibusVehicles = [
   {
@@ -36,15 +40,13 @@ const sprinterVehicles = [
     name: "17 Places",
     description:
       "Le juste milieu entre intimité et capacité, parfait pour les excursions et les transferts de groupes.",
-    image:
-      "https://images.unsplash.com/photo-1619221496652-7ee3d7406203?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img4.src,
   },
   {
     name: "20 Places",
     description:
       "Convivialité maximale sans concession sur le confort — pour les séminaires, team-buildings et circuits organisés.",
-    image:
-      "https://images.unsplash.com/photo-1509749837427-ac94a2553d0e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img5.src,
   },
 ]
 
@@ -53,22 +55,19 @@ const fourWDVehicles = [
     name: "Mitsubishi Pajero",
     description:
       "Robuste et infatigable, le Pajero dompte chaque terrain avec une assurance légendaire.",
-    image:
-      "https://images.unsplash.com/photo-1715372028425-c733b484e80e?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80&auto=format&fit=crop",
+    image: img6.src,
   },
   {
     name: "Toyota Land Cruiser",
     description:
       "L'icône du tout-terrain — puissance, fiabilité et prestige réunis pour vos aventures les plus ambitieuses.",
-    image:
-      "https://images.unsplash.com/photo-1544468607-e7b3e848ff87?q=80&w=1250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img7.src,
   },
   {
     name: "Toyota Prado",
     description:
       "Alliant luxe et performance off-road, le Prado redéfinit l'aventure avec une élégance sans égale.",
-    image:
-      "https://images.unsplash.com/photo-1547245324-d777c6f05e80?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img8.src,
   },
 ]
 

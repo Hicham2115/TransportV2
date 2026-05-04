@@ -91,7 +91,7 @@ export default function RootLayout({
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center justify-center px-8">
             <p className="mb-6 animate-[fadeUp_0.8s_ease_forwards] text-[10px] tracking-[0.6em] text-white/30 uppercase">
-              Next Way Transport
+              Transport
             </p>
 
             <h1 className="mb-8 animate-[slideUp_0.9s_cubic-bezier(0.16,1,0.3,1)_0.2s_both] text-center text-5xl font-semibold tracking-[0.4em] uppercase md:text-7xl">

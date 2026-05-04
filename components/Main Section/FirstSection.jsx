@@ -45,8 +45,8 @@ function FirstSection() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-2xl leading-snug font-semibold text-black md:text-3xl"
           >
-            At Next Way Transport, we move Morocco with safe, comfortable, and
-            reliable journeys that connect people and places across the country.
+            At Transport, we move Morocco with safe, comfortable, and reliable
+            journeys that connect people and places across the country.
           </motion.h3>
 
           <motion.p
