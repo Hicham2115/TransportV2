@@ -4,7 +4,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import TextType from "@/components/TextType"
 import Image from "next/image"
-import img1 from "../../app/assets/juan-encalada-6mcVaoGNz1w-unsplash.jpg"
+import img1 from "../../app/assets/Luxury_transport_fleet_Morocco_202605042304.jpeg"
 
 function Hero() {
   return (
