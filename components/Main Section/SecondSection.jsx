@@ -2,10 +2,9 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import img1 from "@/app/assets/Man48.jpg"
-import img2 from "@/app/assets/sprintershow1920.jpg"
-import img5 from "@/app/assets/kinglong.jpeg"
-import img6 from "@/app/assets/nvcar.jpg"
+import img1 from "@/app/assets/Irizar_bus_side_view_202605041953.jpeg"
+import img2 from "@/app/assets/Irizar_coach_bus_white_background_202605041956.jpeg"
+import img5 from "@/app/assets/Irizar_coach_bus_white_background_202605042003.jpeg"
 
 const services = [
   {
@@ -13,32 +12,28 @@ const services = [
     title: "30 Places",
     description:
       "Idéal pour les groupes de taille moyenne, ce car compact allie maniabilité et confort. Parfait pour les excursions de journée, transferts d'aéroport et circuits touristiques en ville comme en montagne.",
-    image:
-      "https://images.unsplash.com/photo-1495150434753-f8ceb319e9dc?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img1,
   },
   {
     id: "02",
     title: "40 Places",
     description:
       "Un équilibre parfait entre capacité et flexibilité. Ses sièges ergonomiques et son espace généreux en font le choix idéal pour les sorties scolaires, séminaires d'entreprise et voyages organisés.",
-    image:
-      "https://images.unsplash.com/photo-1719316663972-0696da2b47a3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img2,
   },
   {
     id: "03",
     title: "50 Places",
     description:
       "Conçu pour les grands groupes exigeants, ce car spacieux offre une expérience de voyage premium. Climatisation performante, sièges inclinables et large rangement pour les longs trajets en toute sérénité.",
-    image:
-      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img5,
   },
   {
     id: "04",
     title: "54 Places",
     description:
       "Notre fleuron pour les déplacements de grande envergure. Capacité maximale avec confort optimal — idéal pour les voyages longue distance, pèlerinages et événements sportifs à travers tout le royaume.",
-    image:
-      "https://images.unsplash.com/photo-1644828816264-cd47ba424879?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img5,
   },
 ]
 

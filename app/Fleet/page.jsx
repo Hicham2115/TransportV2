@@ -7,6 +7,12 @@ import TextType from "@/components/TextType"
 import img7 from "@/app/assets/EQUIPE1200.webp"
 import img8 from "@/app/assets/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg"
 import img9 from "@/app/assets/nrd-aMmDIsdnUro-unsplash.jpg"
+import busSide from "@/app/assets/Irizar_bus_side_view_202605041953.jpeg"
+import busWhite1 from "@/app/assets/Irizar_coach_bus_white_background_202605041956.jpeg"
+import busWhite2 from "@/app/assets/Irizar_coach_bus_white_background_202605042003.jpeg"
+import miniVito from "@/app/assets/Mercedes_Vito_minibus_front_202605042009.jpeg"
+import miniTransit from "@/app/assets/Ultra-realistic_4K_image_of_a_202605042032.jpeg"
+import sprinter07 from "@/app/assets/Ultra-realistic_4K_studio_photo_of_202605042038.jpeg"
 import Image from "next/image"
 import { Car, Warehouse, Fuel, Wrench, RadioTower, UserCog } from "lucide-react"
 import img11 from "../../app/assets/jahanzeb-ahsan-UTIoG2pJVfA-unsplash.jpg"
@@ -14,18 +20,44 @@ import { ArrowRightToLine } from "lucide-react"
 
 const SERVICES_DATA = [
   {
+    category: "Bus",
+    description: "Grande capacité pour vos déplacements de groupe",
+    items: [
+      {
+        title: "30 Places",
+        desc: "Idéal pour les groupes de taille moyenne, ce car compact allie maniabilité et confort. Parfait pour les excursions de journée, transferts d'aéroport et circuits touristiques.",
+        img: busSide.src,
+      },
+      {
+        title: "40 Places",
+        desc: "Un équilibre parfait entre capacité et flexibilité. Ses sièges ergonomiques et son espace généreux en font le choix idéal pour les séminaires d'entreprise et voyages organisés.",
+        img: busWhite1.src,
+      },
+      {
+        title: "50 Places",
+        desc: "Conçu pour les grands groupes exigeants, ce car spacieux offre une expérience de voyage premium. Climatisation performante, sièges inclinables pour les longs trajets.",
+        img: busWhite2.src,
+      },
+      {
+        title: "54 Places",
+        desc: "Notre fleuron pour les déplacements de grande envergure. Capacité maximale avec confort optimal — idéal pour les voyages longue distance et événements à travers tout le royaume.",
+        img: busWhite2.src,
+      },
+    ],
+  },
+  {
     category: "Minibus",
     description: "Confort et élégance pour les petits groupes",
     items: [
       {
         title: "Mercedes Vito",
         desc: "Discret, élégant et agile — idéal pour les transferts VIP et les petits groupes exigeant intimité et confort.",
-        img: "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?q=80&w=2064&auto=format&fit=crop",
+        img: miniVito.src,
       },
       {
         title: "Ford Transit",
         desc: "Spacieux et modulable, le Ford Transit réunit les groupes intermédiaires dans un cadre confortable pour tout type de déplacement.",
-        img: "https://images.unsplash.com/photo-1564435147636-8ca0966b0275?q=80&w=1738&auto=format&fit=crop",
+        img: miniTransit.src,
       },
     ],
   },
@@ -36,7 +68,7 @@ const SERVICES_DATA = [
       {
         title: "07 Places",
         desc: "La configuration VIP par excellence — sept passagers dans un espace privatif digne d'un premier rang.",
-        img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80&auto=format&fit=crop",
+        img: sprinter07.src,
       },
       {
         title: "17 Places",

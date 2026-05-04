@@ -2,22 +2,26 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 
+import img1 from "@/app/assets/Mercedes_Vito_minibus_front_202605042009.jpeg"
+import img2 from "@/app/assets/Ultra-realistic_4K_image_of_a_202605042032.jpeg"
+import img3 from "@/app/assets/Ultra-realistic_4K_studio_photo_of_202605042038.jpeg"
+import img4 from "@/app/assets/Irizar_coach_bus_white_background_202605042003.jpeg"
+import img5 from "@/app/assets/Irizar_coach_bus_white_background_202605042003.jpeg"
+
 const minibusVehicles = [
   {
     name: "Mercedes Vito",
     capacity: "7 – 9 Places",
     description:
       "Discret, élégant et agile — idéal pour les transferts VIP et les petits groupes exigeant intimité et confort.",
-    image:
-      "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img1.src,
   },
   {
     name: "Ford Transit",
     capacity: "8 – 17 Places",
     description:
       "Spacieux et modulable, le Ford Transit réunit les groupes intermédiaires dans un cadre confortable pour tout type de déplacement.",
-    image:
-      "https://images.unsplash.com/photo-1564435147636-8ca0966b0275?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: img2.src,
   },
 ]
 
@@ -26,8 +30,7 @@ const sprinterVehicles = [
     name: "07 Places",
     description:
       "La configuration VIP par excellence — sept passagers dans un espace privatif digne d'un premier rang.",
-    image:
-      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80&auto=format&fit=crop",
+    image: img3.src,
   },
   {
     name: "17 Places",
@@ -89,7 +92,7 @@ function VehicleCard({ vehicle, badge }) {
       variants={cardVariants}
       className="group relative overflow-hidden border border-black/10 bg-white shadow-md transition-all duration-500 hover:border-brand-gold/50 hover:shadow-xl"
     >
-      <div className="relative h-52 overflow-hidden">
+      <div className="relative h-66 overflow-hidden">
         <img
           src={vehicle.image}
           alt={vehicle.name}
