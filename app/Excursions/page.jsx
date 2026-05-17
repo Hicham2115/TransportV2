@@ -129,6 +129,40 @@ const SERVICES_DATA2 = [
       },
     ],
   },
+  {
+    category: "Adventure & Nature",
+    description:
+      "Experience Morocco's breathtaking landscapes and thrilling outdoor activities, from desert dunes to mountain peaks.",
+    items: [
+      {
+        title: "9-Day Northern Morocco Trekking Adventure",
+        desc: "Embark on a 9-day trekking journey through Northern Morocco, discovering breathtaking mountains, traditional Berber villages, and diverse natural landscapes. With an experienced multilingual guide, explore remote trails, enjoy authentic cultural encounters, and experience Morocco’s rich heritage along the way. This adventure combines hiking, local hospitality, and scenic beauty for an immersive exploration of the country’s northern regions.",
+        img: "https://images.unsplash.com/photo-1660048063418-10db8be0ab65?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        title:
+          "8-Day Marrakech to M’Goun Mountains Trekking Circuit (7 Nights)",
+        desc: "Start your 8-day adventure from Marrakech, the “Red City,” and journey into the stunning M’Goun Mountains. This trekking circuit takes you through remote Berber villages, dramatic valleys, and breathtaking high mountain landscapes. With an experienced multilingual guide, you’ll experience authentic local culture, traditional hospitality, and scenic hiking routes deep in the Atlas Mountains. A perfect blend of nature, adventure, and cultural immersion in Morocco’s wild heart.",
+        img: "https://images.unsplash.com/photo-1611154046036-cd91e50978be?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        title: "8-Day Desert Trek & Draa Valley Exploration",
+        desc: "Embark on an 8-day trekking adventure through the Moroccan desert and the scenic Draa Valley. Discover vast dunes, traditional Berber villages, and palm-filled oases along one of Morocco’s most beautiful valleys. Experience camel trekking, nights in desert bivouacs under the stars, and authentic local hospitality. This journey offers a perfect mix of desert exploration, cultural immersion, and unforgettable natural landscapes.",
+        img: "https://images.unsplash.com/photo-1546744729-7049d0610887?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        title: "8-Day Toubkal Trek: The Roof of Morocco Adventure",
+        desc: "Take on an 8-day trekking adventure to Mount Toubkal, the highest peak in North Africa. Journey through the stunning High Atlas Mountains, passing Berber villages, valleys, and rugged alpine landscapes. Guided by experienced locals, this trip offers a deep immersion into mountain culture, breathtaking scenery, and rewarding hiking challenges. A perfect experience for adventure lovers seeking Morocco’s ultimate mountain escape.",
+        img: "https://images.unsplash.com/photo-1611859836043-a9177f500a27?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        title:
+          "9-Day Northern Morocco Trek: Chefchaouen, Asilah & Rif Region Adventure",
+        desc: "Discover Northern Morocco on a 9-day trekking journey through the Rif Mountains and coastal towns. Explore the iconic blue streets of Chefchaouen, the artistic charm of Asilah, and the surrounding natural landscapes and Berber villages. With a multilingual guide, enjoy scenic hikes, cultural encounters, and authentic local hospitality. This adventure blends mountain trekking, coastal beauty, and rich cultural heritage for a unique Moroccan experience.",
+        img: "https://plus.unsplash.com/premium_photo-1697729733847-0ed51661e005?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+    ],
+  },
 ]
 
 const ARTICLES_DATA = [
@@ -652,7 +686,7 @@ export default function Excursions() {
           >
             {SERVICES_DATA2.map((section) => (
               <div key={section.category}>
-                <div className="mb-8">
+                <div className="mt-15 mb-8">
                   <h3 className="text-2xl font-semibold text-black">
                     {section.category}
                   </h3>
