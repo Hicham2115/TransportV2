@@ -31,12 +31,12 @@ function getSiteUrl() {
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: "Transport ",
-    template: "%s | Transport ",
+    default: "Transport",
+    template: "%s | Transport",
   },
   description:
     "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
-  applicationName: "Transport ",
+  applicationName: "Transport",
   keywords: [
     "Transport Morocco",
     "Bus rental Morocco",
@@ -66,18 +66,27 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "Transport Ouhaddou",
-    title: "Transport Ouhaddou",
+    siteName: "Transport",
+    title: "Transport",
     description:
       "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
     locale: "en_US",
     url: "/",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Transport — Premium transport across Morocco",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
-    title: "Transport Ouhaddou",
+    card: "summary_large_image",
+    title: "Transport",
     description:
       "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
+    images: ["/opengraph-image"],
   },
 }
 
