@@ -31,12 +31,12 @@ function getSiteUrl() {
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: "Transport Ouhaddou",
-    template: "%s | Transport Ouhaddou",
+    default: "Transport ",
+    template: "%s | Transport ",
   },
   description:
     "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
-  applicationName: "Transport Ouhaddou",
+  applicationName: "Transport ",
   keywords: [
     "Transport Morocco",
     "Bus rental Morocco",
