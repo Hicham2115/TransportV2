@@ -9,30 +9,30 @@ import img5 from "@/app/assets/Irizar_coach_bus_white_background_202605042003.jp
 const services = [
   {
     id: "01",
-    title: "30 Places",
+    title: "30 Seats",
     description:
-      "Idéal pour les groupes de taille moyenne, ce car compact allie maniabilité et confort. Parfait pour les excursions de journée, transferts d'aéroport et circuits touristiques en ville comme en montagne.",
+      "Ideal for medium-sized groups, this compact coach combines easy handling with comfort. Perfect for day trips, airport transfers, and sightseeing tours in both cities and mountains.",
     image: img1,
   },
   {
     id: "02",
-    title: "40 Places",
+    title: "40 Seats",
     description:
-      "Un équilibre parfait entre capacité et flexibilité. Ses sièges ergonomiques et son espace généreux en font le choix idéal pour les sorties scolaires, séminaires d'entreprise et voyages organisés.",
+      "A perfect balance between capacity and flexibility. Its ergonomic seats and spacious interior make it the ideal choice for school trips, corporate seminars, and organized tours.",
     image: img2,
   },
   {
     id: "03",
-    title: "50 Places",
+    title: "50 Seats",
     description:
-      "Conçu pour les grands groupes exigeants, ce car spacieux offre une expérience de voyage premium. Climatisation performante, sièges inclinables et large rangement pour les longs trajets en toute sérénité.",
+      "Designed for large demanding groups, this spacious coach offers a premium travel experience. Efficient air conditioning, reclining seats, and large storage space ensure comfort on long journeys.",
     image: img5,
   },
   {
     id: "04",
-    title: "54 Places",
+    title: "54 Seats",
     description:
-      "Notre fleuron pour les déplacements de grande envergure. Capacité maximale avec confort optimal — idéal pour les voyages longue distance, pèlerinages et événements sportifs à travers tout le royaume.",
+      "Our flagship coach for large-scale travel. Maximum capacity with optimal comfort — ideal for long-distance trips, pilgrimages, and sporting events across the kingdom.",
     image: img5,
   },
 ]

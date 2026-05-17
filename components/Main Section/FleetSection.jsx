@@ -15,37 +15,37 @@ import img8 from "@/app/assets/Toyota_Prado_4x4_SUV_202605042202.jpeg"
 const minibusVehicles = [
   {
     name: "Mercedes Vito",
-    capacity: "7 – 9 Places",
+    capacity: "7 – 9 Seats",
     description:
-      "Discret, élégant et agile — idéal pour les transferts VIP et les petits groupes exigeant intimité et confort.",
+      "Discreet, elegant, and agile — ideal for VIP transfers and small groups seeking privacy and comfort.",
     image: img1.src,
   },
   {
     name: "Ford Transit",
-    capacity: "8 – 17 Places",
+    capacity: "8 – 17 Seats",
     description:
-      "Spacieux et modulable, le Ford Transit réunit les groupes intermédiaires dans un cadre confortable pour tout type de déplacement.",
+      "Spacious and versatile, the Ford Transit brings medium-sized groups together in a comfortable setting for all types of travel.",
     image: img2.src,
   },
 ]
 
 const sprinterVehicles = [
   {
-    name: "07 Places",
+    name: "07 Seats",
     description:
-      "La configuration VIP par excellence — sept passagers dans un espace privatif digne d'un premier rang.",
+      "The ultimate VIP configuration — seven passengers in a private space worthy of first class.",
     image: img3.src,
   },
   {
-    name: "17 Places",
+    name: "17 Seats",
     description:
-      "Le juste milieu entre intimité et capacité, parfait pour les excursions et les transferts de groupes.",
+      "The perfect balance between intimacy and capacity, ideal for excursions and group transfers.",
     image: img4.src,
   },
   {
-    name: "20 Places",
+    name: "20 Seats",
     description:
-      "Convivialité maximale sans concession sur le confort — pour les séminaires, team-buildings et circuits organisés.",
+      "Maximum friendliness without compromising comfort — perfect for seminars, team-building events, and organized tours.",
     image: img5.src,
   },
 ]
@@ -54,19 +54,19 @@ const fourWDVehicles = [
   {
     name: "Mitsubishi Pajero",
     description:
-      "Robuste et infatigable, le Pajero dompte chaque terrain avec une assurance légendaire.",
+      "Rugged and tireless, the Pajero conquers every terrain with legendary confidence.",
     image: img6.src,
   },
   {
     name: "Toyota Land Cruiser",
     description:
-      "L'icône du tout-terrain — puissance, fiabilité et prestige réunis pour vos aventures les plus ambitieuses.",
+      "The off-road icon — combining power, reliability, and prestige for your most ambitious adventures.",
     image: img7.src,
   },
   {
     name: "Toyota Prado",
     description:
-      "Alliant luxe et performance off-road, le Prado redéfinit l'aventure avec une élégance sans égale.",
+      "Blending luxury with off-road performance, the Prado redefines adventure with unmatched elegance.",
     image: img8.src,
   },
 ]
@@ -153,10 +153,10 @@ function FleetSection() {
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         className="mx-auto mb-20 max-w-7xl"
       >
-        <p className="glow-label mb-4 text-brand-red">Notre Flotte Complète</p>
+        <p className="glow-label mb-4 text-brand-red">Our Complete Fleet</p>
 
         <h2 className="mt-10 font-serif text-4xl leading-snug font-semibold text-black md:text-5xl">
-          Un véhicule pour chaque
+          A vehicle for everyone
           <br />
           <span className="text-brand-gold">horizon.</span>
         </h2>
@@ -174,7 +174,7 @@ function FleetSection() {
           <CategoryHeader
             index="01"
             title="Minibus"
-            description="Confort et élégance pour les petits groupes"
+            description="Comfort and elegance for small groups"
           />
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {minibusVehicles.map((v) => (
@@ -195,7 +195,7 @@ function FleetSection() {
           <CategoryHeader
             index="02"
             title="Mercedes Sprinter"
-            description="Polyvalence et prestige pour chaque mission"
+            description="Polyvalence and prestige for every mission"
           />
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {sprinterVehicles.map((v) => (
@@ -216,7 +216,7 @@ function FleetSection() {
           <CategoryHeader
             index="03"
             title="4WD · 4×4"
-            description="L'aventure et le luxe, sans compromis"
+            description="Adventure and luxury, without compromise"
           />
 
           {/* Mode toggle */}
@@ -229,7 +229,7 @@ function FleetSection() {
                   : "border border-black/20 text-black/50 hover:border-brand-red/40 hover:text-brand-red"
               }`}
             >
-              Avec Chauffeur — Circuit
+              With Driver — Tour
             </button>
             <button
               onClick={() => setFourWDMode("location")}
@@ -239,7 +239,7 @@ function FleetSection() {
                   : "border border-black/20 text-black/50 hover:border-brand-red/40 hover:text-brand-red"
               }`}
             >
-              Sans Chauffeur — Location
+              Without Driver — Location
             </button>
           </div>
 

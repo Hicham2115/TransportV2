@@ -26,84 +26,84 @@ import { ArrowRightToLine } from "lucide-react"
 const SERVICES_DATA = [
   {
     category: "Bus",
-    description: "Grande capacité pour vos déplacements de groupe",
+    description: "High-capacity transport for your group travel needs",
     items: [
       {
-        title: "30 Places",
-        desc: "Idéal pour les groupes de taille moyenne, ce car compact allie maniabilité et confort. Parfait pour les excursions de journée, transferts d'aéroport et circuits touristiques.",
+        title: "30 Seats",
+        desc: "Ideal for medium-sized groups, this compact coach combines maneuverability and comfort. Perfect for day trips, airport transfers, and sightseeing tours.",
         img: busSide.src,
       },
       {
-        title: "40 Places",
-        desc: "Un équilibre parfait entre capacité et flexibilité. Ses sièges ergonomiques et son espace généreux en font le choix idéal pour les séminaires d'entreprise et voyages organisés.",
+        title: "40 Seats",
+        desc: "A perfect balance between capacity and flexibility. Its ergonomic seats and spacious interior make it ideal for corporate seminars and organized trips.",
         img: busWhite1.src,
       },
       {
-        title: "50 Places",
-        desc: "Conçu pour les grands groupes exigeants, ce car spacieux offre une expérience de voyage premium. Climatisation performante, sièges inclinables pour les longs trajets.",
+        title: "50 Seats",
+        desc: "Designed for large demanding groups, this spacious coach offers a premium travel experience. Efficient air conditioning and reclining seats for long journeys.",
         img: busWhite2.src,
       },
       {
-        title: "54 Places",
-        desc: "Notre fleuron pour les déplacements de grande envergure. Capacité maximale avec confort optimal — idéal pour les voyages longue distance et événements à travers tout le royaume.",
+        title: "54 Seats",
+        desc: "Our flagship vehicle for large-scale transport. Maximum capacity with optimal comfort — ideal for long-distance trips and major events across the country.",
         img: busWhite2.src,
       },
     ],
   },
   {
     category: "Minibus",
-    description: "Confort et élégance pour les petits groupes",
+    description: "Comfort and elegance for small groups",
     items: [
       {
         title: "Mercedes Vito",
-        desc: "Discret, élégant et agile — idéal pour les transferts VIP et les petits groupes exigeant intimité et confort.",
+        desc: "Discreet, elegant, and agile — ideal for VIP transfers and small groups seeking privacy and comfort.",
         img: miniVito.src,
       },
       {
         title: "Ford Transit",
-        desc: "Spacieux et modulable, le Ford Transit réunit les groupes intermédiaires dans un cadre confortable pour tout type de déplacement.",
+        desc: "Spacious and versatile, the Ford Transit accommodates medium-sized groups in a comfortable environment for all types of travel.",
         img: miniTransit.src,
       },
     ],
   },
   {
     category: "Mercedes Sprinter",
-    description: "Polyvalence et prestige pour chaque mission",
+    description: "Versatility and prestige for every mission",
     items: [
       {
-        title: "07 Places",
-        desc: "La configuration VIP par excellence — sept passagers dans un espace privatif digne d'un premier rang.",
+        title: "07 Seats",
+        desc: "The ultimate VIP configuration — seven passengers in a private space worthy of first-class travel.",
         img: sprinter07.src,
       },
       {
-        title: "17 Places",
-        desc: "Le juste milieu entre intimité et capacité, parfait pour les excursions et les transferts de groupes.",
+        title: "17 Seats",
+        desc: "The perfect balance between intimacy and capacity, ideal for excursions and group transfers.",
         img: sprinter17.src,
       },
       {
-        title: "20 Places",
-        desc: "Convivialité maximale sans concession sur le confort — pour les séminaires, team-buildings et circuits organisés.",
+        title: "20 Seats",
+        desc: "Maximum conviviality without compromising comfort — perfect for seminars, team-building events, and organized tours.",
         img: sprinter20.src,
       },
     ],
   },
   {
     category: "4WD · 4×4",
-    description: "L'aventure et le luxe, sans compromis",
+    description: "Adventure and luxury without compromise",
     items: [
       {
         title: "Mitsubishi Pajero",
-        desc: "Robuste et infatigable, le Pajero dompte chaque terrain avec une assurance légendaire.",
+        desc: "Rugged and tireless, the Pajero conquers every terrain with legendary confidence.",
         img: pajero.src,
       },
       {
         title: "Toyota Land Cruiser",
-        desc: "L'icône du tout-terrain — puissance, fiabilité et prestige réunis pour vos aventures les plus ambitieuses.",
+        desc: "The off-road icon — combining power, reliability, and prestige for your most ambitious adventures.",
         img: landCruiser.src,
       },
       {
         title: "Toyota Prado",
-        desc: "Alliant luxe et performance off-road, le Prado redéfinit l'aventure avec une élégance sans égale.",
+        desc: "Blending luxury with off-road performance, the Prado redefines adventure with unmatched elegance.",
         img: prado.src,
       },
     ],
