@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import type { Metadata, Viewport } from "next"
+import { headers } from "next/headers"
 
 import ClientShell from "./ClientShell"
 
@@ -18,76 +19,92 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
 })
 
-function getSiteUrl() {
-  const envUrl = process.env.NEXT_PUBLIC_SITE_URL
+async function getSiteUrl() {
+  const envUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || process.env.URL
   if (envUrl) return envUrl
 
   const vercelUrl = process.env.VERCEL_URL
   if (vercelUrl) return `https://${vercelUrl}`
 
+  try {
+    const h = await headers()
+    const host = h.get("x-forwarded-host") ?? h.get("host")
+    const proto = (h.get("x-forwarded-proto") ?? "https").split(",")[0].trim()
+
+    if (host) return `${proto}://${host}`
+  } catch {
+    // headers() is only available during a request
+  }
+
   return "http://localhost:3000"
 }
 
-export const metadata: Metadata = {
-  metadataBase: new URL(getSiteUrl()),
-  title: {
-    default: "Transport",
-    template: "%s | Transport",
-  },
-  description:
-    "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
-  applicationName: "Transport",
-  keywords: [
-    "Transport Morocco",
-    "Bus rental Morocco",
-    "Group transport",
-    "Excursions",
-    "Casablanca",
-    "Marrakech",
-    "Fleet",
-    "Premium travel",
-  ],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+export async function generateMetadata(): Promise<Metadata> {
+  const baseUrl = new URL(await getSiteUrl())
+  const ogImageUrl = new URL("/opengraph-image.png", baseUrl).toString()
+
+  return {
+    metadataBase: baseUrl,
+    title: {
+      default: "Transport",
+      template: "%s | Transport",
+    },
+    description:
+      "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
+    applicationName: "Transport",
+    keywords: [
+      "Transport Morocco",
+      "Bus rental Morocco",
+      "Group transport",
+      "Excursions",
+      "Casablanca",
+      "Marrakech",
+      "Fleet",
+      "Premium travel",
+    ],
+    robots: {
       index: true,
       follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-  alternates: {
-    canonical: "/",
-  },
-  icons: {
-    icon: "/favicon.ico",
-  },
-  openGraph: {
-    type: "website",
-    siteName: "Transport",
-    title: "Transport",
-    description:
-      "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
-    locale: "en_US",
-    url: "/",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Transport — Premium transport across Morocco",
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
       },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Transport",
-    description:
-      "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
-    images: ["/opengraph-image"],
-  },
+    },
+    alternates: {
+      canonical: "/",
+    },
+    icons: {
+      icon: "/favicon.ico",
+    },
+    openGraph: {
+      type: "website",
+      siteName: "Transport",
+      title: "Transport",
+      description:
+        "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
+      locale: "en_US",
+      url: "/",
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: "Transport — Premium transport across Morocco",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Transport",
+      description:
+        "Premium transport services across Morocco — excursions, fleet, and seamless group travel.",
+      images: [ogImageUrl],
+    },
+  }
 }
 
 export const viewport: Viewport = {
