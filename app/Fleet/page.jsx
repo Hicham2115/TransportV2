@@ -20,7 +20,7 @@ import landCruiser from "@/app/assets/Toyota_Land_Cruiser_4x4_isolated_202605042
 import prado from "@/app/assets/Toyota_Prado_4x4_SUV_202605042202.jpeg"
 import Image from "next/image"
 import { Car, Warehouse, Fuel, Wrench, RadioTower, UserCog } from "lucide-react"
-import img11 from "../../app/assets/jahanzeb-ahsan-UTIoG2pJVfA-unsplash.jpg"
+import img11 from "../../app/assets/Luxury_transport_fleet_Morocco_202605042304.jpeg"
 import { ArrowRightToLine } from "lucide-react"
 
 const SERVICES_DATA = [
@@ -129,7 +129,7 @@ const SERVICES_DATA2 = [
       {
         title: "Professionalism & Excellence",
         desc: "Our drivers maintain a premium standard of professionalism through proper appearance, respectful behavior, discretion, courtesy, and strong customer service values.",
-        img: img7.src,
+        img: "https://images.unsplash.com/photo-1587813369290-091c9d432daf?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ],
   },

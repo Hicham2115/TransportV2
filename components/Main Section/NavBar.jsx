@@ -20,7 +20,7 @@ const navigationLinks = [
   { href: "/#Histoire", label: "Our Story" },
   { href: "/#Excursions", label: "Excursions" },
   { href: "/#Flotte", label: "Our Fleet" },
-  { href: "/#Contact", label: "Contact Us" },
+  { href: "/#contact", label: "Contact Us" },
 ]
 
 export default function Component() {
@@ -33,7 +33,7 @@ export default function Component() {
           <Popover>
             <PopoverTrigger asChild>
               <Button
-                className="group size-8 md:hidden cursor-pointer"
+                className="group size-8 cursor-pointer md:hidden"
                 size="icon"
                 variant="ghost"
               >
@@ -50,15 +50,15 @@ export default function Component() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    className="origin-center -translate-y-[7px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-x-0 group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[315deg] cursor-pointer"
+                    className="origin-center -translate-y-[7px] cursor-pointer transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-x-0 group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[315deg]"
                     d="M4 12L20 12"
                   />
                   <path
-                    className="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] group-aria-expanded:rotate-45 cursor-pointer"
+                    className="origin-center cursor-pointer transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] group-aria-expanded:rotate-45"
                     d="M4 12H20"
                   />
                   <path
-                    className="origin-center translate-y-[7px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[135deg] cursor-pointer"
+                    className="origin-center translate-y-[7px] cursor-pointer transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-aria-expanded:translate-y-0 group-aria-expanded:rotate-[135deg]"
                     d="M4 12H20"
                   />
                 </svg>
@@ -80,7 +80,7 @@ export default function Component() {
                   ))}
                   <div className="mt-2 flex flex-col-reverse gap-2">
                     <Link href="/contact-us">
-                      <button className="relative inline-flex h-8 overflow-hidden rounded-md p-[1px] whitespace-nowrap transition focus:outline-none active:scale-95 cursor-pointer">
+                      <button className="relative inline-flex h-8 cursor-pointer overflow-hidden rounded-md p-[1px] whitespace-nowrap transition focus:outline-none active:scale-95">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E01020_0%,#FF6B35_50%,#C4922A_100%)]"></span>
 
                         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-1 rounded-md bg-[#0A0A0D] px-3 text-xs font-medium text-white backdrop-blur-3xl">

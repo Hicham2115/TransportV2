@@ -17,7 +17,9 @@ function Page() {
       <ThirdSection />
       <FAQ />
       <FourthSection />
-      <Contact />
+      <div id="contact-us">
+        <Contact />
+      </div>
     </>
   )
 }

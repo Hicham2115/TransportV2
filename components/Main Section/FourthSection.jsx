@@ -3,6 +3,7 @@ import React from "react"
 import Image from "next/image"
 import { motion } from "motion/react"
 import bgImage from "@/app/assets/pexels-pavel-danilyuk-8424931.jpg"
+import Link from "next/link"
 
 function FourthSection() {
   const containerVariants = {
@@ -102,14 +103,16 @@ function FourthSection() {
           whileTap={{ scale: 0.98 }}
           className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-lg px-6 py-3 text-sm text-white uppercase sm:w-auto sm:px-8 sm:py-4 sm:text-base"
         >
-          <span className="relative z-20 font-semibold">Get in Touch</span>
+          <Link href="#contact-us">
+            <span className="relative z-20 font-semibold">Get in Touch</span>
 
-          <span className="absolute top-0 left-[-80%] z-10 h-full w-[50%] rotate-12 bg-white/20 blur-lg transition-all duration-1000 group-hover:left-[130%]" />
+            <span className="absolute top-0 left-[-80%] z-10 h-full w-[50%] rotate-12 bg-white/20 blur-lg transition-all duration-1000 group-hover:left-[130%]" />
 
-          <span className="absolute top-0 left-0 h-[20%] w-1/2 border-t-2 border-l-2 border-white/40" />
-          <span className="absolute top-0 right-0 h-[60%] w-1/2 border-t-2 border-r-2 border-white/40 group-hover:h-[90%]" />
-          <span className="absolute bottom-0 left-0 h-[60%] w-1/2 border-b-2 border-l-2 border-white/40 group-hover:h-[90%]" />
-          <span className="absolute right-0 bottom-0 h-[20%] w-1/2 border-r-2 border-b-2 border-white/40" />
+            <span className="absolute top-0 left-0 h-[20%] w-1/2 border-t-2 border-l-2 border-white/40" />
+            <span className="absolute top-0 right-0 h-[60%] w-1/2 border-t-2 border-r-2 border-white/40 group-hover:h-[90%]" />
+            <span className="absolute bottom-0 left-0 h-[60%] w-1/2 border-b-2 border-l-2 border-white/40 group-hover:h-[90%]" />
+            <span className="absolute right-0 bottom-0 h-[20%] w-1/2 border-r-2 border-b-2 border-white/40" />
+          </Link>
         </motion.button>
       </motion.div>
     </section>
